@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.concurrent.TimeUnit;
 public class JquryTest {
     public static void main(String[] args) {
-        System.setProperty("webdriver.chrome.driver","c:\\webdriver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","c:\\Users\\Nurrr\\IdeaProjects\\javaproject\\drivers\\chromedriver.exe");
         ChromeOptions chromeOptions=new ChromeOptions();
         chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
         WebDriver driver=new ChromeDriver(chromeOptions);
