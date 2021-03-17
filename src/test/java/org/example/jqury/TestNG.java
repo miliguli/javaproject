@@ -1,31 +1,36 @@
-package org.example.jquryproject;
+package org.example.jqury;
+
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Reporter;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
 
-public class JquryTest {
-    public static void main(String[] args) {
+public class TestNG {
+    WebDriver driver;
 
+    @BeforeClass
+    public void setup()
+    {
         System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "//drivers//chromedriver.exe");
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
-        WebDriver driver = new ChromeDriver(chromeOptions);
+        driver = new ChromeDriver(chromeOptions);
         driver.manage().window().maximize();
         driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
-        driver.get("https://jqueryui.com");
 
-        //draggable
-        WebElement draggableLink = driver.findElement(By.linkText("Draggable"));
-        waitForElement(driver, draggableLink);
-        draggableLink.click();
+
+    }
+    @Test
+    public void draggableTest()
+    {
+        driver.get("https://jqueryui.com/draggable/");
         JavascriptExecutor jse = (JavascriptExecutor) driver;
         jse.executeScript("window.scrollBy(0,300)");
         WebElement draggablePage = driver.findElement(By.tagName("iframe"));
@@ -33,43 +38,40 @@ public class JquryTest {
         driver.switchTo().frame(draggablePage);
         sleep(1);
         WebElement draggableObject = driver.findElement(By.cssSelector(".ui-widget-content.ui-draggable.ui-draggable-handle"));
-        Actions actions = new Actions(driver);
+        //Actions actions = new Actions(driver);
         Point beforeDrag = draggableObject.getLocation();
         int beforeDragToX = beforeDrag.getX();
+        Actions actions=new Actions(driver);
         actions.clickAndHold(draggableObject).moveByOffset(100, 0).release();
         actions.build().perform();
         Point afterLocation = draggableObject.getLocation();
         int afterDragToX = afterLocation.getX();
-        if (afterDragToX > beforeDragToX) {
-            //I want you to find other way to print out the log message. For example, You can use
-            Reporter.log(String.format("Test, passed, object has dragged to another location"));
-
-            System.out.println("Test, passed, object has dragged to another location ");
-
-
-        } else
-            System.out.println("Test failed");
+        Assert.assertTrue(afterDragToX>beforeDragToX);
+        //Reporter.log(String.format("Test, passed, object has dragged to another location"));
         sleep(2);
-
-
-        //droppable
+    }
+    @Test
+    public void droppableTest()
+    {
         driver.get("https://jqueryui.com/droppable/");
+        JavascriptExecutor jse = (JavascriptExecutor) driver;
         jse.executeScript("window.scrollBy(0,300)");
         WebElement droppablePage = driver.findElement(By.tagName("iframe"));
         driver.switchTo().frame(droppablePage);
         WebElement draggable = driver.findElement(By.id("draggable"));
         WebElement droppable = driver.findElement(By.id("droppable"));
+        Actions actions=new Actions(driver);
         actions.dragAndDrop(draggable, droppable).build().perform();
         WebElement confirmationMessage = driver.findElement(By.xpath("//*[@id=\"droppable\"]/p"));
-        if (confirmationMessage.isDisplayed()) {
-            System.out.println("Test passed, object dropped into the target");
-        } else
-            System.out.println("test failed");
+        Assert.assertTrue(confirmationMessage.isDisplayed());
         sleep(2);
+    }
 
-
-        //resize]
+    @Test
+    public void resizableTest()
+    {
         driver.get("https://jqueryui.com/resizable/");
+        JavascriptExecutor jse = (JavascriptExecutor) driver;
         jse.executeScript("window.scrollBy(0,300)");
         WebElement resizablePage = driver.findElement(By.tagName("iframe"));
         waitForElement(driver, resizablePage);
@@ -84,15 +86,15 @@ public class JquryTest {
         int afterResizeY = afterResize.getY();
         System.out.println(afterResize.x);
         System.out.println("Before resize:" + beforeResize.x + "/" + "After reize: " + afterResize.x);
-        if (afterResizeY > beforeResizeY)
-            System.out.println("Test passed, object resized");
-        else
-            System.out.println("Test failed");
+        Assert.assertTrue(afterResizeY>beforeResizeY);
         sleep(2);
+    }
 
-
-        //selectable(single item)
+    @Test
+    public void selectableTest()
+    {
         driver.get("https://jqueryui.com/selectable/");
+        JavascriptExecutor jse = (JavascriptExecutor) driver;
         jse.executeScript("window.scrollBy(0,300)");
         WebElement selectablePage = driver.findElement(By.tagName("iframe"));
         waitForElement(driver, selectablePage);
@@ -101,29 +103,27 @@ public class JquryTest {
         waitForElement(driver, item1);
         item1.click();
         WebElement item1Selected = driver.findElement(By.xpath("//*[@id=\"selectable\"]/li[1]"));
-        if (item1Selected.isDisplayed())
-            System.out.println("Test passed, item1 selected");
-        else
-            System.out.println("Test failed");
+        Assert.assertTrue(item1Selected.isDisplayed());
         sleep(1);
         //select multiple items
         WebElement item2 = driver.findElement(By.xpath("//*[@id=\"selectable\"]/li[2]"));
         WebElement item3 = driver.findElement(By.xpath("//*[@id=\"selectable\"]/li[3]"));
         waitForElement(driver, item3);
+        Actions actions=new Actions(driver);
         actions.dragAndDrop(item2, item3).release();
         actions.build().perform();
         WebElement item2Selected = driver.findElement(By.xpath("//*[@id=\"selectable\"]/li[2]"));
         WebElement item3Selected = driver.findElement(By.xpath("//*[@id=\"selectable\"]/li[3]"));
-        if (item2Selected.isDisplayed())
-            if (item3Selected.isDisplayed())
-                System.out.println("Test passed, multiple items selected");
-            else
-                System.out.println("Test failed");
+        Assert.assertTrue(item2Selected.isDisplayed());
+        Assert.assertTrue(item3Selected.isDisplayed());
         sleep(2);
+    }
 
-
-        //sortable
+    @Test
+    public void sortableTest()
+    {
         driver.get("https://jqueryui.com/sortable/");
+        JavascriptExecutor jse = (JavascriptExecutor) driver;
         jse.executeScript("window.scrollBy(0,300)");
         WebElement sortablePage = driver.findElement(By.tagName("iframe"));
         driver.switchTo().frame(sortablePage);
@@ -131,38 +131,40 @@ public class JquryTest {
         Point beforeSort = sortableItem1.getLocation();
         int beforeSortToY = beforeSort.getY();
         WebElement sortableItem2 = driver.findElement(By.xpath("//*[@id=\"sortable\"]/li[2]"));
+        Actions actions=new Actions(driver);
         actions.clickAndHold(sortableItem1).moveToElement(sortableItem2, 0, 50).release();
         actions.build().perform();
         Point afterSort = sortableItem1.getLocation();
         int afterSortToY = afterSort.getY();
-        if (afterSortToY > beforeSortToY)
-            System.out.println("Test passed, items reordered");
-        else
-            System.out.println("Test failed");
+        Assert.assertTrue(afterSortToY > beforeSortToY);
         sleep(2);
+    }
 
-
-        //accordion
+    @Test
+    public void accordionTest()
+    {
         driver.get("https://jqueryui.com/accordion/");
+        JavascriptExecutor jse = (JavascriptExecutor) driver;
         jse.executeScript("window.scrollBy(0,300)");
         WebElement accordionPage = driver.findElement(By.tagName("iframe"));
         driver.switchTo().frame(accordionPage);
         WebElement section4 = driver.findElement(By.cssSelector("#ui-id-7"));
         waitForElement(driver, section4);
+        Actions actions=new Actions(driver);
         actions.moveToElement(section4).release();
         actions.build().perform();
         sleep(1);
         section4.click();
         WebElement content = driver.findElement(By.xpath("//*[@id=\"ui-id-8\"]"));
-        if (content.isDisplayed())
-            System.out.println("Test passed, content is displayed");
-        else
-            System.out.println("Test failed");
+        Assert.assertTrue(content.isDisplayed());
         sleep(2);
+    }
 
-
-        //autocomplete
+    @Test
+    public void autocompleteTest()
+    {
         driver.get("https://jqueryui.com/autocomplete/");
+        JavascriptExecutor jse = (JavascriptExecutor) driver;
         jse.executeScript("window.scrollBy(0,300)");
         WebElement autocompletePage = driver.findElement(By.tagName("iframe"));
         driver.switchTo().frame(autocompletePage);
@@ -172,14 +174,15 @@ public class JquryTest {
         WebElement option = driver.findElement(By.xpath("//ul/li/div[text()='BASIC']"));
         option.click();
         WebElement confirmation = driver.findElement(By.xpath("//*[@id=\"tags\"]"));
-        if (confirmation.isDisplayed())
-            System.out.println("Test passed, option typed in the tag ");
-        else
-            System.out.println("Test failed");
+        Assert.assertTrue(confirmation.isDisplayed());
+        sleep(1);
+    }
 
-
-        //button
+    @Test
+    public void buttonTest()
+    {
         driver.get("https://jqueryui.com/button/");
+        JavascriptExecutor jse = (JavascriptExecutor) driver;
         jse.executeScript("window.scrollBy(0,300)");
         WebElement buttonPage = driver.findElement(By.tagName("iframe"));
         driver.switchTo().frame(buttonPage);
@@ -206,15 +209,15 @@ public class JquryTest {
         WebElement cssAnchor = driver.findElement(By.cssSelector("body > a"));
         waitForElement(driver, cssAnchor);
         cssAnchor.click();
-        if (cssAnchor.isSelected())
-            System.out.println("Test passed, button clicked");
-        else
-            System.out.println("Test failed");
+        Assert.assertTrue(cssAnchor.isDisplayed());
         sleep(2);
+    }
 
-
-        //radioButton
+    @Test
+    public void radioButtonTest()
+    {
         driver.get("https://jqueryui.com/checkboxradio/");
+        JavascriptExecutor jse = (JavascriptExecutor) driver;
         jse.executeScript("window.scrollBy(0,300)");
         WebElement radioButtonPage = driver.findElement(By.tagName("iframe"));
         driver.switchTo().frame(radioButtonPage);
@@ -230,17 +233,15 @@ public class JquryTest {
         WebElement newYorkButtonChecked = driver.findElement(By.xpath("/html/body/div/fieldset[1]/label[1]"));
         WebElement ratingChecked = driver.findElement(By.xpath("/html/body/div/fieldset[2]/label[2]"));
         WebElement bedTypeChecked = driver.findElement(By.xpath("/html/body/div/fieldset[3]/label[3]"));
-        if (newYorkButtonChecked.isDisplayed())
-            if (ratingChecked.isDisplayed())
-                if (bedTypeChecked.isDisplayed())
-                    System.out.println("Test passed, city, rating, bed type checked");
-                else
-                    System.out.println("Test failed");
+        Assert.assertTrue(newYorkButtonChecked.isDisplayed());
         sleep(1);
+    }
 
-
-        //control group
+    @Test
+    public void controlGroupTest()
+    {
         driver.get("https://jqueryui.com/controlgroup/");
+        JavascriptExecutor jse = (JavascriptExecutor) driver;
         jse.executeScript("window.scrollBy(0,400)");
         WebElement controlGroupPage = driver.findElement(By.tagName("iframe"));
         driver.switchTo().frame(controlGroupPage);
@@ -266,18 +267,18 @@ public class JquryTest {
         WebElement standardChecked = driver.findElement(By.xpath("/html/body/div[1]/fieldset[1]/div/label[1]"));
         WebElement insuranceChecked = driver.findElement(By.xpath("/html/body/div[1]/fieldset[1]/div/label[3]"));
         WebElement numbersOfCarsChecked = driver.findElement(By.xpath("//*[@id=\"horizontal-spinner\"]"));
-        if (suvSelected.isDisplayed())
-            if (standardChecked.isDisplayed())
-                if (insuranceChecked.isDisplayed())
-                    if (numbersOfCarsChecked.isDisplayed())
-                        System.out.println("Test passed, car type, standard, insurance, numbers of cards checked");
-                    else
-                        System.out.println("Test failed");
+        Assert.assertTrue(suvSelected.isDisplayed());
+        Assert.assertTrue(standardChecked.isDisplayed());
+        Assert.assertTrue(insuranceChecked.isDisplayed());
+        Assert.assertTrue(numbersOfCarsChecked.isDisplayed());
         sleep(1);
+    }
 
-
-        //date picker
+    @Test
+    public void datPickerTest()
+    {
         driver.get("https://jqueryui.com/datepicker/");
+        JavascriptExecutor jse = (JavascriptExecutor) driver;
         jse.executeScript("window.scrollBy(0,300)");
         WebElement datePickerPage = driver.findElement(By.tagName("iframe"));
         driver.switchTo().frame(datePickerPage);
@@ -288,19 +289,20 @@ public class JquryTest {
         WebElement day10 = driver.findElement(By.linkText("10"));
         day10.click();
         WebElement monthSelected = driver.findElement(By.xpath("//*[@id=\"ui-datepicker-div\"]/div/div/span[1]"));
-        if (monthSelected.isDisplayed())
-            System.out.println("Test passed, date checked");
-        else
-            System.out.println("Test failed");
+        Assert.assertTrue(monthSelected.isDisplayed());
         sleep(1);
+    }
 
-
-        //dialog
+    @Test
+    public void dialogTest()
+    {
         driver.get("https://jqueryui.com/dialog/");
+        JavascriptExecutor jse = (JavascriptExecutor) driver;
         jse.executeScript("window.scrollBy(0,300)");
         WebElement dialogPage = driver.findElement(By.tagName("iframe"));
         driver.switchTo().frame(dialogPage);
         WebElement dialogObject = driver.findElement(By.xpath("//*[@id=\"ui-id-1\"]"));
+        Actions actions=new Actions(driver);
         actions.dragAndDropBy(dialogObject, 110, 110);
         WebElement resize = driver.findElement(By.xpath("/html/body/div/div[8]"));
         actions.clickAndHold(resize).moveByOffset(-200, -200).release();
@@ -308,19 +310,20 @@ public class JquryTest {
         WebElement closeDialog = driver.findElement(By.xpath("/html/body/div/div[1]/button/span[1]"));
         closeDialog.click();
         WebElement contentClosed = driver.findElement(By.xpath("//*[@id=\"ui-id-1\"]"));
-        if (!contentClosed.isDisplayed())
-            System.out.println("Test passed, content closed");
-        else
-            System.out.println("Test failed");
+        Assert.assertTrue(!contentClosed.isDisplayed());
         sleep(1);
+    }
 
-
-        //menu
+    @Test
+    public void menuTest()
+    {
         driver.get("https://jqueryui.com/menu/");
+        JavascriptExecutor jse = (JavascriptExecutor) driver;
         jse.executeScript("window.scrollBy(0,300)");
         WebElement menuPage = driver.findElement(By.tagName("iframe"));
         driver.switchTo().frame(menuPage);
         WebElement musicList = driver.findElement(By.id("ui-id-9"));
+        Actions actions=new Actions(driver);
         actions.moveToElement(musicList).build().perform();
         sleep(2);
         WebElement rock = driver.findElement(By.xpath("//ul/li/div[text()='Rock']"));
@@ -329,10 +332,13 @@ public class JquryTest {
         WebElement alternative = driver.findElement(By.xpath("//ul/li/div[text()='Alternative']"));
         alternative.click();
         sleep(1);
+    }
 
-
-        //Select Menu
+    @Test
+    public void selectMenuTest()
+    {
         driver.get("https://jqueryui.com/selectmenu/");
+        JavascriptExecutor jse = (JavascriptExecutor) driver;
         jse.executeScript("window.scrollBy(0,300)");
         WebElement selectMenuPage = driver.findElement(By.tagName("iframe"));
         driver.switchTo().frame(selectMenuPage);
@@ -355,33 +361,34 @@ public class JquryTest {
         WebElement title = driver.findElement(By.xpath("//ul/li/div[text()='Mr.']"));
         title.click();
         WebElement titleSelected = driver.findElement(By.xpath("//*[@id=\"salutation-button\"]/span[2]"));
-        if (titleSelected.isDisplayed())
-            System.out.println("Test passed, title selected");
-        else
-            System.out.println("Test failed");
+        Assert.assertTrue(titleSelected.isDisplayed());
         sleep(1);
+    }
 
-
-        //slider
+    @Test
+    public void sliderTest()
+    {
         driver.get("https://jqueryui.com/slider/");
+        JavascriptExecutor jse = (JavascriptExecutor) driver;
         jse.executeScript("window.scrollBy(0,300)");
         WebElement sliderPage = driver.findElement(By.tagName("iframe"));
         driver.switchTo().frame(sliderPage);
         WebElement slider = driver.findElement(By.xpath("//*[@id=\"slider\"]/span"));
         Point beforeSlideLocation = slider.getLocation();
         int beforeSlideX = beforeSlideLocation.getX();
+        Actions actions=new Actions(driver);
         actions.clickAndHold(slider).moveByOffset(200, 0).moveByOffset(200, 0).release().build().perform();
         Point afterSlideLocation = slider.getLocation();
         int afterSlideX = afterSlideLocation.getX();
-        if (afterSlideX > beforeSlideX)
-            System.out.println("Test passed, slider moved to the right");
-        else
-            System.out.println("Test failed");
+        Assert.assertTrue(afterSlideX > beforeSlideX);
         sleep(1);
+    }
 
-
-        //tabs
+    @Test
+    public void tabsTest()
+    {
         driver.get("https://jqueryui.com/tabs/");
+        JavascriptExecutor jse = (JavascriptExecutor) driver;
         jse.executeScript("window.scrollBy(0,300)");
         WebElement tabsPage = driver.findElement(By.tagName("iframe"));
         driver.switchTo().frame(tabsPage);
@@ -395,28 +402,29 @@ public class JquryTest {
         tab1.click();
         sleep(1);
         WebElement tab1Clicked = driver.findElement(By.xpath("//*[@id=\"tabs-1\"]/p"));
-        if (tab1Clicked.isDisplayed())
-            System.out.println("Test passed, all three tabs clicked, contents are displayed");
-        else
-            System.out.println("Test failed");
+        Assert.assertTrue(tab1Clicked.isDisplayed());
         sleep(1);
-
-
-        driver.close();
-        driver.quit();
-
     }
 
-    public static void waitForElement(WebDriver driver, WebElement element) {
+
+    @AfterClass
+    public void teardown()
+    {
+        driver.close();
+        driver.quit();
+    }
+
+
+    public void waitForElement(WebDriver driver, WebElement element) {
         WebDriverWait webDriverWait = new WebDriverWait(driver, 30);
         webDriverWait.until(ExpectedConditions.visibilityOf(element));
     }
 
-    public static void sleep(int seconds) {
+    public void sleep(int seconds) {
         try {
             Thread.sleep(seconds * 1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-    }
+}
 }
