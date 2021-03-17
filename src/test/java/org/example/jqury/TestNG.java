@@ -27,7 +27,7 @@ public class TestNG {
 
 
     }
-    @Test
+    @Test(enabled = true, priority =0)
     public void draggableTest()
     {
         driver.get("https://jqueryui.com/draggable/");
@@ -50,7 +50,7 @@ public class TestNG {
         //Reporter.log(String.format("Test, passed, object has dragged to another location"));
         sleep(2);
     }
-    @Test
+    @Test(enabled = true, priority = 1)
     public void droppableTest()
     {
         driver.get("https://jqueryui.com/droppable/");
@@ -67,7 +67,7 @@ public class TestNG {
         sleep(2);
     }
 
-    @Test
+    @Test(enabled = true, priority =3)
     public void resizableTest()
     {
         driver.get("https://jqueryui.com/resizable/");
@@ -84,13 +84,11 @@ public class TestNG {
         actionsResize.clickAndHold(resizableElement).moveByOffset(50, 30).release().build().perform();
         Point afterResize = resizableElement.getLocation();
         int afterResizeY = afterResize.getY();
-        System.out.println(afterResize.x);
-        System.out.println("Before resize:" + beforeResize.x + "/" + "After reize: " + afterResize.x);
         Assert.assertTrue(afterResizeY>beforeResizeY);
         sleep(2);
     }
 
-    @Test
+    @Test(enabled = true, priority =4)
     public void selectableTest()
     {
         driver.get("https://jqueryui.com/selectable/");
@@ -119,7 +117,7 @@ public class TestNG {
         sleep(2);
     }
 
-    @Test
+    @Test(enabled = true, priority =5)
     public void sortableTest()
     {
         driver.get("https://jqueryui.com/sortable/");
@@ -140,7 +138,7 @@ public class TestNG {
         sleep(2);
     }
 
-    @Test
+    @Test(enabled = true, priority =6)
     public void accordionTest()
     {
         driver.get("https://jqueryui.com/accordion/");
@@ -160,7 +158,7 @@ public class TestNG {
         sleep(2);
     }
 
-    @Test
+    @Test(enabled = true, priority =7)
     public void autocompleteTest()
     {
         driver.get("https://jqueryui.com/autocomplete/");
@@ -178,7 +176,7 @@ public class TestNG {
         sleep(1);
     }
 
-    @Test
+    @Test(enabled = true, priority =8)
     public void buttonTest()
     {
         driver.get("https://jqueryui.com/button/");
@@ -213,7 +211,7 @@ public class TestNG {
         sleep(2);
     }
 
-    @Test
+    @Test(enabled = true, priority =9)
     public void radioButtonTest()
     {
         driver.get("https://jqueryui.com/checkboxradio/");
@@ -237,7 +235,7 @@ public class TestNG {
         sleep(1);
     }
 
-    @Test
+    @Test(enabled = true, priority =10)
     public void controlGroupTest()
     {
         driver.get("https://jqueryui.com/controlgroup/");
@@ -274,7 +272,7 @@ public class TestNG {
         sleep(1);
     }
 
-    @Test
+    @Test(enabled = true, priority =11)
     public void datPickerTest()
     {
         driver.get("https://jqueryui.com/datepicker/");
@@ -293,7 +291,7 @@ public class TestNG {
         sleep(1);
     }
 
-    @Test
+    @Test(enabled = true, priority =12)
     public void dialogTest()
     {
         driver.get("https://jqueryui.com/dialog/");
@@ -314,7 +312,7 @@ public class TestNG {
         sleep(1);
     }
 
-    @Test
+    @Test(enabled = true, priority =13)
     public void menuTest()
     {
         driver.get("https://jqueryui.com/menu/");
@@ -334,7 +332,7 @@ public class TestNG {
         sleep(1);
     }
 
-    @Test
+    @Test(enabled = true, priority =14)
     public void selectMenuTest()
     {
         driver.get("https://jqueryui.com/selectmenu/");
@@ -365,7 +363,7 @@ public class TestNG {
         sleep(1);
     }
 
-    @Test
+    @Test(enabled = true, priority =15)
     public void sliderTest()
     {
         driver.get("https://jqueryui.com/slider/");
@@ -384,7 +382,7 @@ public class TestNG {
         sleep(1);
     }
 
-    @Test
+    @Test(enabled = true, priority =16)
     public void tabsTest()
     {
         driver.get("https://jqueryui.com/tabs/");
