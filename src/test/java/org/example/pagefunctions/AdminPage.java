@@ -38,7 +38,7 @@ public class AdminPage extends CommonFunctions {
         findButtonClick(objRepo.userTypeForAddingUser);
         Assert.assertTrue(objRepo.adminUserType.isDisplayed());
         Assert.assertTrue(objRepo.essUserType.isDisplayed());
-        inputTextField(driver,objRepo.employeeNameTextbox, CommonVariables.orangeHRM_MyInfo_EmployeeFirstName +CommonVariables.orangeHRM_MyInfo_EmployeeLastName);
+        inputTextField(driver,objRepo.employeeNameTextbox, CommonVariables.orangeHRM_MyInfo_EmployeeFirstName+" "+CommonVariables.orangeHRM_MyInfo_EmployeeLastName);
         inputTextField(driver,objRepo.usernameTextbox,CommonVariables.orangeHRM_System_Username);
         findButtonClick(objRepo.statusLabel);
         Assert.assertTrue(objRepo.enableStatusType.isDisplayed());

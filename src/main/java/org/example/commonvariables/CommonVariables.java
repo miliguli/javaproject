@@ -13,7 +13,7 @@ public class CommonVariables {
     public static String orangeHRM_MyInfo_EmployeeFirstName ="Mily";
     public static String orangeHRM_MyInfo_EmployeeLastName ="Hm";
     public static String orangeHRM_MyInfo_EmployeeId ="007";
-    public static String orangeHRM_System_Username="Milyh.";
+    public static String orangeHRM_System_Username="Milyhm";
     public static String orangeHRM_System_Password="Mily1234";
 
 

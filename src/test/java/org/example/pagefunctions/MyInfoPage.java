@@ -53,26 +53,33 @@ public class MyInfoPage extends CommonFunctions {
         js.executeScript("document.getElementById('personal_txtLicExpDate').value='2023-09-01'");
         findButtonClick(objRepo.genderButtonForFemale);
         //select marital status
-        Select select=new Select(objRepo.maritalStatusSelector);
-        List<WebElement> listOfOptions=select.getOptions();
+        Select selectMaritalStatus=new Select(objRepo.maritalStatusSelector);
+        List<WebElement> listOfOptions=selectMaritalStatus.getOptions();
         for (WebElement webElement:listOfOptions)
         {
             System.out.println("marital Status Options:"+webElement.getText());
         }
-        select.selectByVisibleText("Single");
+        selectMaritalStatus.selectByVisibleText("Single");
+        sleep(1);
         //select nationalities
-        Select select1=new Select(objRepo.nationalitySelector);
-        select1.selectByVisibleText("American");
-        List<WebElement> nationalitiesOptions=select.getOptions();
+        Select selectNationality=new Select(objRepo.nationalitySelector);
+        selectNationality.selectByVisibleText("American");
+        List<WebElement> nationalitiesOptions=selectNationality.getOptions();
         for (WebElement webElement:nationalitiesOptions)
         {
             System.out.println("nationalities Options:"+webElement.getText());
         }
         findButtonClick(objRepo.myInfoSaveButton);
-
-
-
-
-
+        sleep(1);
+        //Custom fields( blood type )
+        findButtonClick(objRepo.customFieldEditButton);
+        Select selectBloodType=new Select(objRepo.bloodTypeSelector);
+        selectBloodType.selectByVisibleText("O+");
+        List<WebElement> listOfBloodOptions=selectBloodType.getOptions();
+        for (WebElement element:listOfBloodOptions)
+        {
+            System.out.println("Blood Options: "+element.getText());
+        }
+        sleep(1);
     }
 }

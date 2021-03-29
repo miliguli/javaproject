@@ -65,8 +65,8 @@ public class Base {
 
     @AfterMethod
     public void afterEachMethod(){
-        //driver.close();
-        //driver.quit();
+        driver.close();
+        driver.quit();
 
     }
 
