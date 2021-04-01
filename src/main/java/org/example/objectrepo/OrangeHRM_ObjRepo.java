@@ -20,10 +20,10 @@ public class OrangeHRM_ObjRepo {
     public WebElement loggedInDashboardPage;
 
     // logout
-    @FindBy(linkText = "Welcome Paul")
+    @FindBy(id = "welcome")
     public WebElement welcomeLink;
 
-    @FindBy(linkText = "About")
+    @FindBy(id = "aboutDisplayLink")
     public WebElement aboutLink;
 
     @FindBy(linkText = "Logout")
@@ -152,6 +152,12 @@ public class OrangeHRM_ObjRepo {
 
     @FindBy(id = "btnSave")
     public WebElement myInfoSaveButton;
+
+    @FindBy(id = "btnEditCustom")
+    public WebElement customFieldEditButton;
+
+    @FindBy(name = "custom1")
+    public WebElement bloodTypeSelector;
 
 
 
