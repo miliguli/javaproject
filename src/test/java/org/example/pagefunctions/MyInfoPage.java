@@ -3,6 +3,7 @@ package org.example.pagefunctions;
 import org.example.commonfunctions.CommonFunctions;
 import org.example.commonvariables.CommonVariables;
 import org.example.objectrepo.OrangeHRM_ObjRepo;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -57,29 +58,39 @@ public class MyInfoPage extends CommonFunctions {
         List<WebElement> listOfOptions=selectMaritalStatus.getOptions();
         for (WebElement webElement:listOfOptions)
         {
-            System.out.println("marital Status Options:"+webElement.getText());
+            System.out.println(webElement.getText());
         }
-        selectMaritalStatus.selectByVisibleText("Single");
+        selectMaritalStatus.selectByVisibleText(CommonVariables.orangeHRM_MyInfo_MaritalStatus);
         sleep(1);
         //select nationalities
         Select selectNationality=new Select(objRepo.nationalitySelector);
-        selectNationality.selectByVisibleText("American");
+        selectNationality.selectByVisibleText(CommonVariables.orangeHRM_MyInfo_Nationality);
         List<WebElement> nationalitiesOptions=selectNationality.getOptions();
         for (WebElement webElement:nationalitiesOptions)
         {
-            System.out.println("nationalities Options:"+webElement.getText());
+            System.out.println(webElement.getText());
         }
         findButtonClick(objRepo.myInfoSaveButton);
         sleep(1);
+
         //Custom fields( blood type )
         findButtonClick(objRepo.customFieldEditButton);
         Select selectBloodType=new Select(objRepo.bloodTypeSelector);
-        selectBloodType.selectByVisibleText("O+");
+        selectBloodType.selectByVisibleText(CommonVariables.orangeHRM_MyInfo_BloodType);
         List<WebElement> listOfBloodOptions=selectBloodType.getOptions();
         for (WebElement element:listOfBloodOptions)
         {
-            System.out.println("Blood Options: "+element.getText());
+            System.out.println(element.getText());
         }
         sleep(1);
-    }
+
+        //add attachment
+        findButtonClick(objRepo.addButtonForAddingAttachment);
+        driver.findElement(By.xpath("//*[@id=\'ufile\']")).sendKeys("/Users/nur428/IdeaProjects/javaproject/src/main/java/org/example/data/test100k.db");
+        inputTextField(driver,objRepo.attachmentCommentField,CommonVariables.orangeHRM_MyInfo_AttachmentComment);
+        findButtonClick(objRepo.uploadAttachmentButton);
+        findButtonClick(objRepo.uploadAttachmentButton);
+        //Assert.assertTrue(objRepo.attachmentListDisplayed.isDisplayed());
+}
+
 }

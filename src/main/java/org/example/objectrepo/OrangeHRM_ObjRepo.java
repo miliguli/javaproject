@@ -141,13 +141,13 @@ public class OrangeHRM_ObjRepo {
     @FindBy(id = "personal_txtLicExpDate")
     public WebElement licenseExpDatePicker;
 
-    @FindBy(name = "personal[optGender]")
+    @FindBy(xpath = "//*[@id=\"frmEmpPersonalDetails\"]/fieldset/ol[3]/li[1]/ul/li[2]/label")
     public WebElement genderButtonForFemale;
 
     @FindBy(xpath = "//select[@id='personal_cmbMarital']")
     public WebElement maritalStatusSelector;
 
-    @FindBy(id = "personal_cmbNation")
+    @FindBy(xpath = "//*[@id=\"personal_cmbNation\"]")
     public WebElement nationalitySelector;
 
     @FindBy(id = "btnSave")
@@ -159,8 +159,23 @@ public class OrangeHRM_ObjRepo {
     @FindBy(name = "custom1")
     public WebElement bloodTypeSelector;
 
+    @FindBy(xpath = "//*[@id=\'btnAddAttachment\']")
+    public WebElement addButtonForAddingAttachment;
 
+    @FindBy(xpath = "//*[@id=\'ufile\']")
+    public WebElement addAttachmentForInfoPage;
 
+    @FindBy(xpath = "//*[@id=\'txtAttDesc\']")
+    public WebElement attachmentCommentField;
+
+    @FindBy(xpath = "//*[@id=\'btnSaveAttachment\']")
+    public WebElement uploadAttachmentButton;
+
+    @FindBy(xpath = "//*[@id=\'btnAddAttachment\']")
+    public WebElement addAttachmentButton;
+
+    @FindBy(xpath = "//*[@id=\'tblAttachments\']/tbody/tr")
+    public WebElement attachmentListDisplayed;
 
 
 
@@ -222,7 +237,24 @@ public class OrangeHRM_ObjRepo {
     @FindBy(id = "btnSave")
     public WebElement systemUserSaveButton;
 
-    @FindBy(linkText = "Milyh.")
-    public WebElement newSystemUsername;
+    @FindBy(id = "searchSystemUser_userName")
+    public WebElement searchUsernameField;
+
+    @FindBy(id = "searchSystemUser_userType")
+    public WebElement searchSystemUserDropdownList;
+
+    @FindBy(id = "searchSystemUser_status")
+    public WebElement searchStatusDropdownList;
+
+    @FindBy(id = "searchBtn")
+    public WebElement searchButton;
+
+    @FindBy(linkText = "Milyyy")
+    public WebElement systemUserLink;
+
+    @FindBy(xpath = "//*[@id=\"resultTable\"]/tbody/tr/td")
+    public WebElement searchErrorMessage;
+
+
 }
 

@@ -5,8 +5,12 @@ import org.example.commonfunctions.CommonFunctions;
 import org.example.commonvariables.CommonVariables;
 import org.example.objectrepo.OrangeHRM_ObjRepo;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
+
+import java.util.List;
 
 public class AdminPage extends CommonFunctions {
 
@@ -46,17 +50,38 @@ public class AdminPage extends CommonFunctions {
         inputTextField(driver,objRepo.systemUserPassword,CommonVariables.orangeHRM_System_Password);
         inputTextField(driver,objRepo.systemUserConfirmPassword,CommonVariables.orangeHRM_System_Password);
         findButtonClick(objRepo.systemUserSaveButton);
-        //Actions actions=new Actions(driver);
-        //actions.moveToElement(objRepo.newSystemUsername).build().perform();
-        Assert.assertTrue(objRepo.newSystemUsername.isDisplayed());
+        sleep(2);
+    }
 
+    public void searchSystemUser(WebDriver driver)
+    {
+        validateAdminPageText(driver);
+        inputTextField(driver,objRepo.searchUsernameField,CommonVariables.orangeHRM_System_Username);
+        Select selectSystemUserRole=new Select(objRepo.searchSystemUserDropdownList);
+        selectSystemUserRole.selectByVisibleText("ESS");
+        List<WebElement> listOfSearchOptions=selectSystemUserRole.getOptions();
+        for (WebElement element:listOfSearchOptions)
+        {
+            System.out.println("User Roles are:"+element.getText());
+        }
+        Select selectSearchStatus=new Select(objRepo.searchStatusDropdownList);
+        selectSearchStatus.selectByVisibleText("Enabled");
+        sleep(2);
+        List<WebElement> listOfSearchStatus=selectSearchStatus.getOptions();
+        for (WebElement element:listOfSearchStatus)
+        {
+            System.out.println("searchable statuses are: "+element.getText());
+        }
+        findButtonClick(objRepo.searchButton);
+        Assert.assertTrue(objRepo.systemUserLink.isDisplayed());
+    }
 
-
-
-
-
-
-
+    public void searchInvalidUser(WebDriver driver)
+    {
+        validateAdminPageText(driver);
+        inputTextField(driver,objRepo.searchUsernameField,CommonVariables.orangeHRM_System_InvalidUsername);
+        findButtonClick(objRepo.searchButton);
+        Assert.assertTrue(objRepo.searchErrorMessage.isDisplayed());
 
     }
 
