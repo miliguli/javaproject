@@ -28,6 +28,7 @@ public class LoginPage extends CommonFunctions {
         inputTextField(driver, objRepo.password, CommonVariables.orangeHRM_Password);
         Assert.assertTrue(!objRepo.username.getText().equals(null));
         findButtonClick(objRepo.loginButton);
+        sleep(1);
         //driver.switchTo().alert().dismiss();
         Assert.assertTrue(objRepo.loggedInDashboardPage.isDisplayed());
     }
@@ -64,6 +65,7 @@ public class LoginPage extends CommonFunctions {
         inputTextField(driver, objRepo.username, CommonVariables.orangeHRM_Username);
         inputTextField(driver, objRepo.password, CommonVariables.orangeHRM_InvalidPassword);
         findButtonClick(objRepo.loginButton);
+        sleep(1);
         Assert.assertTrue(objRepo.errorMessage.isDisplayed());
     }
 

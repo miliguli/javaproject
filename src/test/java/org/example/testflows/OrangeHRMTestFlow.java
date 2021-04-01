@@ -107,6 +107,17 @@ public class OrangeHRMTestFlow extends Base {
     {
         AdminPage adminPage=new AdminPage(driver);
         adminPage.addSystemUser(driver);
+        adminPage.searchSystemUser(driver);
     }
+
+    @Test(enabled = true,priority = 14)
+    public void searchSystemUserTest()
+    {
+        AdminPage adminPage=new AdminPage(driver);
+        adminPage.searchSystemUser(driver);
+    }
+
+
+
 
 }
