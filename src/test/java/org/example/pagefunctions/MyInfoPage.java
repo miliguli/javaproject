@@ -86,10 +86,14 @@ public class MyInfoPage extends CommonFunctions {
 
         //add attachment
         findButtonClick(objRepo.addButtonForAddingAttachment);
+        sleep(1);
+        //inputTextField(driver,objRepo.addAttachmentForInfoPage,CommonVariables.orangeHRM_MyInfoFilePath);
         driver.findElement(By.xpath("//*[@id=\'ufile\']")).sendKeys("/Users/nur428/IdeaProjects/javaproject/src/main/java/org/example/data/test100k.db");
+        sleep(1);
         inputTextField(driver,objRepo.attachmentCommentField,CommonVariables.orangeHRM_MyInfo_AttachmentComment);
+        findButtonClick(objRepo.uploadAttachmentButton);////*[@id='ufile']
         findButtonClick(objRepo.uploadAttachmentButton);
-        findButtonClick(objRepo.uploadAttachmentButton);
+        sleep(1);
         //Assert.assertTrue(objRepo.attachmentListDisplayed.isDisplayed());
 }
 

@@ -26,12 +26,49 @@ public class AdminPage extends CommonFunctions {
         loginPage.successfulLogin(driver);
         Assert.assertTrue(objRepo.adminLink.isDisplayed());
         findButtonClick(objRepo.adminLink);
+        //userManagement List
         Assert.assertTrue(objRepo.userManagementLink.isDisplayed());
-        Assert.assertTrue(objRepo.jobLinkinMyInfoPage.isDisplayed());
+        findButtonClick(objRepo.userManagementLink);
+        Assert.assertTrue(objRepo.usersLink.isDisplayed());
+        //job list
+        Assert.assertTrue(objRepo.jobLink.isDisplayed());
+        findButtonClick(objRepo.jobLinkinMyInfoPage);
+        sleep(1);
+        Assert.assertTrue(objRepo.jobTitleLink.isDisplayed());
+        Assert.assertTrue(objRepo.payGradesLink.isDisplayed());
+        Assert.assertTrue(objRepo.employmentStatusLink.isDisplayed());
+        Assert.assertTrue(objRepo.jobCategoriesLink.isDisplayed());
+        Assert.assertTrue(objRepo.workShiftsLink.isDisplayed());
+        //organization list
         Assert.assertTrue(objRepo.organizationLink.isDisplayed());
+        findButtonClick(objRepo.organizationLink);
+        sleep(1);
+        Assert.assertTrue(objRepo.generalInformation.isDisplayed());
+        Assert.assertTrue(objRepo.locationLink.isDisplayed());
+        Assert.assertTrue(objRepo.structureLink.isDisplayed());
+        //qualifications list
         Assert.assertTrue(objRepo.qualificationsLinkInAdminPage.isDisplayed());
+        findButtonClick(objRepo.qualificationsLinkInAdminPage);
+        sleep(1);
+        Assert.assertTrue(objRepo.skillsLink.isDisplayed());
+        Assert.assertTrue(objRepo.educationLink.isDisplayed());
+        Assert.assertTrue(objRepo.licensesLink.isDisplayed());
+        Assert.assertTrue(objRepo.languagesLink.isDisplayed());
+        Assert.assertTrue(objRepo.membershipsLinkInAdminPage.isDisplayed());
+        //nationalities link
         Assert.assertTrue(objRepo.nationalitiesLink.isDisplayed());
+        //configurationLink list
         Assert.assertTrue(objRepo.configurationLink.isDisplayed());
+        findButtonClick(objRepo.configurationLink);
+        sleep(1);
+        Assert.assertTrue(objRepo.emailSubscriptionsLink.isDisplayed());
+        Assert.assertTrue(objRepo.localizationLink.isDisplayed());
+        Assert.assertTrue(objRepo.languagePackagesLink.isDisplayed());
+        Assert.assertTrue(objRepo.modulesLink.isDisplayed());
+        Assert.assertTrue(objRepo.socialMediaAuthenticationLink.isDisplayed());
+        Assert.assertTrue(objRepo.registerOAuthClient.isDisplayed()
+        );
+
 
     }
 

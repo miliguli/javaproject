@@ -87,7 +87,7 @@ public class OrangeHRMTestFlow extends Base {
         myInfoPage.validateMyInfo(driver);
     }
 
-    @Test(enabled = true,priority = 11)
+    @Test(enabled = false,priority = 11)
     public void editMyInfoTest()
     {
         MyInfoPage myInfoPage=new MyInfoPage(driver);

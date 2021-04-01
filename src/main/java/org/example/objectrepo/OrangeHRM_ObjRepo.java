@@ -186,8 +186,68 @@ public class OrangeHRM_ObjRepo {
     @FindBy(linkText = "User Management")
     public WebElement userManagementLink;
 
+    @FindBy(linkText = "Users")
+    public WebElement usersLink;
+
     @FindBy(linkText = "Job")
     public WebElement jobLink;
+
+    @FindBy(linkText = "Job Titles")
+    public WebElement jobTitleLink;
+
+    @FindBy(linkText = "Pay Grades")
+    public WebElement payGradesLink;
+
+    @FindBy(linkText = "Employment Status")
+    public WebElement employmentStatusLink;
+
+    @FindBy(linkText = "Job Categories")
+    public WebElement jobCategoriesLink;
+
+    @FindBy(linkText = "Work Shifts")
+    public WebElement workShiftsLink;
+
+    @FindBy(linkText = "General Information")
+    public WebElement generalInformation;
+
+    @FindBy(linkText = "Locations")
+    public WebElement locationLink;
+
+    @FindBy(linkText = "Structure")
+    public WebElement structureLink;
+
+    @FindBy(linkText = "Skills")
+    public WebElement skillsLink;
+
+    @FindBy(linkText = "Education")
+    public WebElement educationLink;
+
+    @FindBy(linkText = "Licenses")
+    public WebElement licensesLink;
+
+    @FindBy(linkText = "Languages")
+    public WebElement languagesLink;
+
+    @FindBy(xpath = "//*[@id='menu_admin_membership']")
+    public WebElement membershipsLinkInAdminPage;
+
+    @FindBy(linkText = "Email Subscriptions")
+    public WebElement emailSubscriptionsLink;
+
+    @FindBy(linkText = "Localization")
+    public WebElement localizationLink;
+
+    @FindBy(linkText = "Language Packages")
+    public WebElement languagePackagesLink;
+
+    @FindBy(linkText = "Modules")
+    public WebElement modulesLink;
+
+    @FindBy(linkText = "Social Media Authentication")
+    public WebElement socialMediaAuthenticationLink;
+
+    @FindBy(linkText = "Register OAuth Client")
+    public WebElement registerOAuthClient;
 
     @FindBy(linkText = "Organization")
     public WebElement organizationLink;
