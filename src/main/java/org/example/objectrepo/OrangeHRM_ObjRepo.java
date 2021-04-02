@@ -116,7 +116,7 @@ public class OrangeHRM_ObjRepo {
     @FindBy(linkText = "Tax Exemptions")
     public WebElement taxExemptionsLink;
 
-    @FindBy(linkText = "Report-to")
+    @FindBy(xpath = "//*[@id=\"sidenav\"]/li[8]/a")
     public WebElement reportToLink;
 
     @FindBy(linkText = "Qualifications")
@@ -265,13 +265,13 @@ public class OrangeHRM_ObjRepo {
     public WebElement addUserButton;
 
     @FindBy(id = "systemUser_userType")
-    public WebElement userTypeForAddingUser;
+    public WebElement userRoleType;
 
     @FindBy(xpath = "//*[@id=\"systemUser_userType\"]/option[1]")
-    public WebElement adminUserType;
+    public WebElement adminRole;
 
     @FindBy(xpath = "//*[@id=\"systemUser_userType\"]/option[2]")
-    public WebElement essUserType;
+    public WebElement essRole;
 
     @FindBy(xpath = "//*[@id=\"systemUser_employeeName_empName\"]")
     public WebElement employeeNameTextbox;

@@ -67,6 +67,7 @@ public class Base {
     public void afterEachMethod(){
         driver.close();
         driver.quit();
+        Reporter.log("Browser session end");
 
     }
 

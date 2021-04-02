@@ -81,13 +81,13 @@ public class OrangeHRMTestFlow extends Base {
     }
 
     @Test(enabled = true,priority = 10)
-    public void validateMyInfoTest()
+    public void validateMyInfoPageTest()
     {
         MyInfoPage myInfoPage=new MyInfoPage(driver);
         myInfoPage.validateMyInfo(driver);
     }
 
-    @Test(enabled = false,priority = 11)
+    @Test(enabled = true,priority = 11)
     public void editMyInfoTest()
     {
         MyInfoPage myInfoPage=new MyInfoPage(driver);
@@ -96,7 +96,7 @@ public class OrangeHRMTestFlow extends Base {
     }
 
     @Test(enabled = true,priority = 12)
-    public void validateAdminPageTextTest()
+    public void validateAdminPageTest()
     {
         AdminPage adminPage=new AdminPage(driver);
         adminPage.validateAdminPageText(driver);
@@ -107,7 +107,6 @@ public class OrangeHRMTestFlow extends Base {
     {
         AdminPage adminPage=new AdminPage(driver);
         adminPage.addSystemUser(driver);
-        adminPage.searchSystemUser(driver);
     }
 
     @Test(enabled = true,priority = 14)
@@ -115,6 +114,13 @@ public class OrangeHRMTestFlow extends Base {
     {
         AdminPage adminPage=new AdminPage(driver);
         adminPage.searchSystemUser(driver);
+    }
+
+    @Test(enabled = true,priority = 15)
+    public void searchInvalidUserTest()
+    {
+        AdminPage adminPage=new AdminPage(driver);
+        adminPage.searchInvalidUser(driver);
     }
 
 

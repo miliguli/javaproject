@@ -1,11 +1,10 @@
 package org.example.commonfunctions;
 
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.io.File;
 import java.io.IOException;
 
@@ -35,10 +34,45 @@ public class CommonFunctions {
     }
 
 
-    public void waitForElement(WebDriver driver, WebElement element) {
+    public void highlightElements(WebDriver driver, WebElement highlightElement)
+    {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].setAttribute('style', 'background: green; border: 3px solid blue;');",
+                highlightElement);
+    }
+
+
+    public void scrollIntoView(WebDriver driver, WebElement scrollElement)
+    {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView();", scrollElement);
+
+    }
+
+
+    public void datePicker(WebDriver driver)
+    {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("document.getElementById('personal_txtLicExpDate').value='2023-09-01'");
+    }
+
+
+    public void selectFromDropDownList(WebElement element, String VisibleText){
+        Select select = new Select(element);
+        select.selectByVisibleText(VisibleText);
+    }
+
+
+    public void uploadFile(WebDriver driver, By locator, String path){
+        driver.findElement(locator).sendKeys(path);
+    }
+
+
+    public void waitForElementVisible(WebDriver driver, WebElement element) {
         WebDriverWait webDriverWait = new WebDriverWait(driver, 30);
         webDriverWait.until(ExpectedConditions.visibilityOf(element));
     }
+
 
     public void sleep(int seconds) {
         try {
@@ -47,6 +81,7 @@ public class CommonFunctions {
             e.printStackTrace();
         }
     }
+
 
     public void takeScreenShot(WebDriver driver,String pathName)
     {
