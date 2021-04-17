@@ -50,12 +50,6 @@ public class CommonFunctions {
     }
 
 
-    public void datePicker(WebDriver driver)
-    {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("document.getElementById('personal_txtLicExpDate').value='2023-09-01'");
-    }
-
 
     public void selectFromDropDownList(WebElement element, String VisibleText){
         Select select = new Select(element);
@@ -65,6 +59,20 @@ public class CommonFunctions {
 
     public void uploadFile(WebDriver driver, By locator, String path){
         driver.findElement(locator).sendKeys(path);
+    }
+
+    public void inputDate(WebDriver driver, WebElement inputElem, String inputDate) {
+
+        try {
+            inputElem.click();
+            inputElem.clear();
+            inputElem.sendKeys(inputDate);
+            inputElem.sendKeys(Keys.ENTER);
+        } catch (Exception e) {
+            e.printStackTrace();
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+            js.executeScript("arguments[0].setAttribute('value','" + inputDate + "')",inputDate );
+        }
     }
 
 

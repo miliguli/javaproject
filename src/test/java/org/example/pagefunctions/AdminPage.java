@@ -1,17 +1,11 @@
 package org.example.pagefunctions;
-
-
 import org.example.commonfunctions.CommonFunctions;
 import org.example.commonvariables.CommonVariables;
 import org.example.objectrepo.OrangeHRM_ObjRepo;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.Reporter;
-
-import java.util.List;
 
 public class AdminPage extends CommonFunctions {
 
@@ -136,7 +130,7 @@ public class AdminPage extends CommonFunctions {
         highlightElements(driver,objRepo.systemUserSaveButton);
         findButtonClick(objRepo.systemUserSaveButton);
         sleep(2);
-        Reporter.log("Added a system user successfully");
+        Reporter.log("System user added successfully");
     }
 
     public void searchSystemUser(WebDriver driver)
@@ -159,6 +153,7 @@ public class AdminPage extends CommonFunctions {
         highlightElements(driver,objRepo.systemUserLink);
         Assert.assertTrue(objRepo.systemUserLink.isDisplayed());
         sleep(1);
+        Reporter.log("One record is displayed");
     }
 
     public void searchInvalidUser(WebDriver driver)
@@ -176,6 +171,54 @@ public class AdminPage extends CommonFunctions {
         sleep(1);
         highlightElements(driver,objRepo.searchErrorMessage);
         Assert.assertTrue(objRepo.searchErrorMessage.isDisplayed());
+        sleep(1);
+        Reporter.log("'No record found' message is displayed");
+    }
+
+    public void addJobTitle(WebDriver driver)
+    {
+        LoginPage loginPage=new LoginPage(driver);
+        loginPage.successfulLogin(driver);
+        Reporter.log("Adding job title to the admin page");
+        waitForElementVisible(driver,objRepo.adminLink);
+        findButtonClick(objRepo.adminLink);
+        sleep(1);
+        highlightElements(driver,objRepo.jobLink);
+        findButtonClick(objRepo.jobLink);
+        highlightElements(driver,objRepo.jobTitleLink);
+        findButtonClick(objRepo.jobTitleLink);
+        waitForElementVisible(driver,objRepo.addJobTitleButton);
+        findButtonClick(objRepo.addJobTitleButton);
+        inputTextField(driver,objRepo.jobTitleInputField,CommonVariables.orangeHRM_Admin_JobTitle);
+        sleep(1);
+        inputTextField(driver,objRepo.jobDescriptionInputField,CommonVariables.orangeHRM_Admin_JobDescription);
+        sleep(1);
+        findButtonClick(objRepo.saveJobTitleButton);
+        Assert.assertTrue(objRepo.jobTitleAdded.isDisplayed());
+        Reporter.log("One job title Added to the page");
+
+    }
+
+    public void deleteJobTitle(WebDriver driver)
+    {
+        LoginPage loginPage=new LoginPage(driver);
+        loginPage.successfulLogin(driver);
+        Reporter.log("deleting a job title on the admin page");
+        waitForElementVisible(driver,objRepo.adminLink);
+        findButtonClick(objRepo.adminLink);
+        sleep(1);
+        highlightElements(driver,objRepo.jobLink);
+        findButtonClick(objRepo.jobLink);
+        sleep(1);
+        highlightElements(driver,objRepo.jobTitleLink);
+        findButtonClick(objRepo.jobTitleLink);
+        sleep(1);
+        highlightElements(driver,objRepo.businessManagerLink);
+        findButtonClick(objRepo.businessManagerLink);
+        sleep(1);
+        findButtonClick(objRepo.deleteJobTitleButton);
+        sleep(1);
+        findButtonClick(objRepo.okButtonForDeleteTitle);
         sleep(1);
 
     }

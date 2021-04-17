@@ -34,7 +34,7 @@ public class LoginPage extends CommonFunctions {
         highlightElements(driver,objRepo.loginButton);
         findButtonClick(objRepo.loginButton);
         sleep(1);
-        highlightElements(driver,objRepo.loggedInDashboardPage);
+        waitForElementVisible(driver,objRepo.loggedInDashboardPage);
         Assert.assertTrue(objRepo.loggedInDashboardPage.isDisplayed());
         Reporter.log("Logged in Successfully");
     }
@@ -206,6 +206,7 @@ public class LoginPage extends CommonFunctions {
         highlightElements(driver,objRepo.loginPageFooter);
         Assert.assertTrue(objRepo.loginPageFooter.isDisplayed());
         sleep(1);
+        Reporter.log("All the links and text are validated");
 
     }
 
