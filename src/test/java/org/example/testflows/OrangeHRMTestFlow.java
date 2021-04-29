@@ -211,4 +211,12 @@ public class OrangeHRMTestFlow extends Base {
         LeavePage leavePage=new LeavePage(driver);
         leavePage.searchLeaveList(driver);
     }
-}
+
+    @Test(enabled = true,priority = 29)
+    public void validateTimePageTest() {
+        TimePage timePage=new TimePage(driver);
+        timePage.validateTimePage(driver);
+
+    }
+    }
+

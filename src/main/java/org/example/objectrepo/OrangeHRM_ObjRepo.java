@@ -596,6 +596,55 @@ public class OrangeHRM_ObjRepo {
     @FindBy(id = "assignBtn")
     public WebElement assignLeaveButton;
 
+    //Time PAge
+    @FindBy(id = "menu_time_viewTimeModule")
+    public WebElement timeLink;
+
+    @FindBy(id = "menu_time_Timesheets")
+    public WebElement timeSheetsLinkTimePage;
+
+    @FindBy(id = "menu_time_viewMyTimesheet")
+    public WebElement myTimeSheetsLinkTimePage;
+
+    @FindBy(linkText = "Employee Timesheets")
+    public WebElement employeeTimeSheetsLink;
+
+    @FindBy(linkText = "Attendance")
+    public WebElement attendanceLink;
+
+    @FindBy(linkText = "My Records")
+    public WebElement myRecordsLink;
+
+    @FindBy(linkText = "Punch In/Out")
+    public WebElement punchInOutLink;
+
+    @FindBy(linkText = "Employee Records")
+    public WebElement employeeRecordsLink;
+
+    @FindBy(linkText = "Configuration")
+    public WebElement configurationLinkOnTimePage;
+
+    @FindBy(linkText = "Reports")
+    public WebElement reportsLinkTimePage;
+
+    @FindBy(linkText = "Project Reports")
+    public WebElement projectReportsLink;
+
+    @FindBy(linkText = "Employee Reports")
+    public WebElement employeeReportsLink;
+
+    @FindBy(linkText = "Attendance Summary")
+    public WebElement attendanceSummaryLink;
+
+    @FindBy(linkText = "Project Info")
+    public WebElement projectInfoLink;
+
+    @FindBy(linkText = "Customers")
+    public WebElement customersLink;
+
+    @FindBy(linkText = "Projects")
+    public WebElement projectsLink;
+
 
 
 
