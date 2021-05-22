@@ -22,12 +22,12 @@ public class CommonVariables {
     public static String orangeHRM_MyInfo_MaritalStatus="Single";
     public static String orangeHRM_MyInfo_Nationality="American";
     public static String orangeHRM_MyInfo_GenderType="Female";
-    public static String orangeHRM_MyInfo_BloodType="O+";
     public static String orangeHRM_MyInfo_ExpiryDate="2021-04-02";
+    public static String orangeHRM_MyInfo_BloodType="O+";
     //Contact details info
     public static String orangeHRM_Contact_Street1 ="456 Morris Drive";
     public static String orangeHRM_Contact_Street2 ="apt 101";
-    public static String  orangeHRM_Contact_City="Anchorage";
+    public static String orangeHRM_Contact_City="Anchorage";
     public static String orangeHRM_Contact_State ="Alaska";
     public static String orangeHRM_Contact_ZipCode ="12340";
     public static String orangeHRM_Contact_Country="United States";

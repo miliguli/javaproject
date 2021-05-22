@@ -6,6 +6,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
+
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class JquryTest {
@@ -46,7 +48,6 @@ public class JquryTest {
         } else
             System.out.println("Test failed");
         sleep(2);
-
 
         //droppable
         driver.get("https://jqueryui.com/droppable/");
@@ -116,7 +117,13 @@ public class JquryTest {
             else
                 System.out.println("Test failed");
         sleep(2);
+        // click all elements one by one
+        List<WebElement> options = driver.findElements(By.xpath("//li[@class=\"ui-widget-content ui-selectee\"]"));
 
+        for (WebElement option : options) {
+
+            option.click();
+        }
 
         //sortable
         driver.get("https://jqueryui.com/sortable/");

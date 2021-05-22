@@ -4,6 +4,7 @@ import org.example.commonfunctions.CommonFunctions;
 import org.example.objectrepo.OrangeHRM_ObjRepo;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Reporter;
 
 public class TimePage extends CommonFunctions {
 
@@ -16,37 +17,32 @@ public class TimePage extends CommonFunctions {
 
     public void validateTimePage(WebDriver driver)
     {
-        LoginPage loginPage=new LoginPage(driver);
-        loginPage.successfulLogin(driver);
+        Reporter.log("Navigate to the time page");
         waitForElementVisible(driver,objRepo.timeLink);
         findButtonClick(objRepo.timeLink);
-        highlightElements(driver,objRepo.timeSheetsLinkTimePage);
+        //validating timeSheets link list
+       validatePage(driver,objRepo.timeSheetsLinkTimePage);
         findButtonClick(objRepo.timeSheetsLinkTimePage);
-        sleep(1);
-        highlightElements(driver,objRepo.myTimeSheetsLinkTimePage);
-        highlightElements(driver,objRepo.employeeTimeSheetsLink);
-        waitForElementVisible(driver,objRepo.attendanceLink);
-        highlightElements(driver,objRepo.attendanceLink);
+        validatePage(driver,objRepo.myTimeSheetsLinkTimePage);
+        validatePage(driver,objRepo.employeeTimeSheetsLink);
+        //validating Attendance link list
+        validatePage(driver,objRepo.attendanceLink);
         findButtonClick(objRepo.attendanceLink);
-        sleep(1);
-        highlightElements(driver,objRepo.myRecordsLink);
-        highlightElements(driver,objRepo.punchInOutLink);
-        highlightElements(driver,objRepo.employeeRecordsLink);
-        highlightElements(driver,objRepo.configurationLinkOnTimePage);
-        highlightElements(driver,objRepo.reportsLinkTimePage);
+        validatePage(driver,objRepo.myRecordsLink);
+        validatePage(driver,objRepo.punchInOutLink);
+        validatePage(driver,objRepo.employeeRecordsLink);
+        validatePage(driver,objRepo.configurationLinkOnTimePage);
+        //validating reports link list
+        validatePage(driver,objRepo.reportsLinkTimePage);
         findButtonClick(objRepo.reportsLinkTimePage);
-        sleep(1);
-        highlightElements(driver,objRepo.projectReportsLink);
-        highlightElements(driver,objRepo.employeeReportsLink);
-        highlightElements(driver,objRepo.attendanceSummaryLink);
-        highlightElements(driver,objRepo.projectInfoLink);
+        validatePage(driver,objRepo.projectReportsLink);
+        validatePage(driver,objRepo.employeeReportsLink);
+        validatePage(driver,objRepo.attendanceSummaryLink);
+        //validating project info link list
+        validatePage(driver,objRepo.projectInfoLink);
         findButtonClick(objRepo.projectInfoLink);
-        sleep(1);
-        highlightElements(driver,objRepo.customersLink);
-        highlightElements(driver,objRepo.projectsLink);
-        sleep(1);
-
-
-
+        validatePage(driver,objRepo.customersLink);
+        validatePage(driver,objRepo.projectsLink);
+        Reporter.log("All the links on the time page are displayed");
     }
 }

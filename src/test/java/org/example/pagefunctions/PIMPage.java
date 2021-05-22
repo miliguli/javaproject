@@ -18,50 +18,40 @@ public class PIMPage extends CommonFunctions {
 
     public void validatePIMPage(WebDriver driver)
     {
-        LoginPage loginPage=new LoginPage(driver);
-        loginPage.successfulLogin(driver);
         Reporter.log("Start validating all the links on 'PIM Page'");
+        //click on pim link
         findButtonClick(objRepo.pimLink);
-        sleep(1);
-        Assert.assertTrue(objRepo.configurationLinkOnPimPage.isDisplayed());
-        highlightElements(driver,objRepo.configurationLinkOnPimPage);
+        validatePage(driver,objRepo.configurationLinkOnPimPage);
         findButtonClick(objRepo.configurationLinkOnPimPage);
-        sleep(1);
-        Assert.assertTrue(objRepo.optionalFieldsLink.isDisplayed());
-        highlightElements(driver,objRepo.optionalFieldsLink);
-        Assert.assertTrue(objRepo.customFieldsLink.isDisplayed());
-        highlightElements(driver,objRepo.customFieldsLink);
-        Assert.assertTrue(objRepo.dataImportLink.isDisplayed());
-        highlightElements(driver,objRepo.dataImportLink);
-        Assert.assertTrue(objRepo.reportingMethodsLink.isDisplayed());
-        highlightElements(driver,objRepo.reportingMethodsLink);
-        Assert.assertTrue(objRepo.terminationReasonsLink.isDisplayed());
-        highlightElements(driver,objRepo.terminationReasonsLink);
-        sleep(1);
-        Assert.assertTrue(objRepo.employeeListLink.isDisplayed());
-        highlightElements(driver,objRepo.employeeListLink);
-        Assert.assertTrue(objRepo.addEmployeeLink.isDisplayed());
-        highlightElements(driver,objRepo.addEmployeeLink);
-        sleep(1);
-        Assert.assertTrue(objRepo.reportsLink.isDisplayed());
-        highlightElements(driver,objRepo.reportsLink);
-        sleep(1);
+        //validating configuration link list
+        validatePage(driver,objRepo.optionalFieldsLink);
+        validatePage(driver,objRepo.customFieldsLink);
+        validatePage(driver, objRepo.dataImportLink);
+        validatePage(driver,objRepo.reportingMethodsLink);
+        validatePage(driver,objRepo.terminationReasonsLink);
+        //validating employee list link
+        validatePage(driver,objRepo.employeeListLink);
+        validatePage(driver,objRepo.addEmployeeLink);
+        validatePage(driver,objRepo.reportsLink);
+        Reporter.log("All the links on the pim page are displayed");
     }
 
     public void addEmployee(WebDriver driver)
     {
-        LoginPage loginPage=new LoginPage(driver);
-        loginPage.successfulLogin(driver);
         Reporter.log("Start adding an employee on 'PIM Page'");
         findButtonClick(objRepo.pimLink);
         sleep(1);
+        //click add employee link
         waitForElementVisible(driver,objRepo.addEmployeeLink);
         highlightElements(driver,objRepo.addEmployeeLink);
         findButtonClick(objRepo.addEmployeeLink);
+        //enter employee first name
         waitForElementVisible(driver,objRepo.employeeFirstnameInputField);
         inputTextField(driver,objRepo.employeeFirstnameInputField,CommonVariables.orangeHRM_PIM_EmployeeFirstname);
         sleep(1);
+        //enter employee last name
         inputTextField(driver,objRepo.employeeLastname,CommonVariables.orangeHRM_PIM_EmployeeLastname);
+        //click save button
         findButtonClick(objRepo.saveEmployeeButton);
         sleep(1);
         highlightElements(driver,objRepo.profilePicHeader);
@@ -72,13 +62,18 @@ public class PIMPage extends CommonFunctions {
 
     public void searchEmployee(WebDriver driver)
     {
-        LoginPage loginPage=new LoginPage(driver);
-        loginPage.successfulLogin(driver);
         Reporter.log("Start searching an employee on 'PIM Page'");
+        //navigate to the pim page
         findButtonClick(objRepo.pimLink);
         sleep(1);
+        //enter employee name
         inputTextField(driver,objRepo.employeeNameInputField,CommonVariables.orangeHRM_PIM_EmployeeFirstname+" "+CommonVariables.orangeHRM_MyInfo_EmployeeLastName);
+        //click on search button
         findButtonClick(objRepo.searchEmployeeButton);
+        highlightElements(driver,objRepo.searchNotFound);
+        Assert.assertTrue(objRepo.searchNotFound.isDisplayed());
+        sleep(1);
+
 
 
 
