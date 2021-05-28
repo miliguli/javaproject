@@ -4,16 +4,16 @@ import org.openqa.selenium.support.FindBy;
 
 public class OrangeHRM_ObjRepo {
      // login
-    @FindBy(xpath = "//*[@id=\"divLogo\"]/img")
+    @FindBy(id = "divLogo")
     public WebElement loginLog;
 
-    @FindBy(css = "input#btnLogin")
+    @FindBy(id = "btnLogin")
     public WebElement loginButton;
 
-    @FindBy(css = "input#txtUsername")
+    @FindBy(name = "txtUsername")
     public WebElement username;
 
-    @FindBy(css = "input#txtPassword")
+    @FindBy(id = "txtPassword")
     public WebElement password;
 
     @FindBy(linkText = "Dashboard")
@@ -36,7 +36,7 @@ public class OrangeHRM_ObjRepo {
     @FindBy(linkText = "Forgot your password?")
     public WebElement passwordRestLink;
 
-    @FindBy(css = "#content > div.box > div.head > h1")
+    @FindBy(xpath = " //div[@class=\"head\"]")
     public WebElement forgetPasswordHeader;
 
     @FindBy(id = "securityAuthentication_userName")
@@ -45,7 +45,13 @@ public class OrangeHRM_ObjRepo {
     @FindBy(name = "button")
     public WebElement resetPasswordButton;
 
-    @FindBy(css = "#content > div.box > div.head > h1")
+    @FindBy(xpath = "//div[@class=\"message warning fadable\"]")
+    public WebElement resetPasswordErrorMessage;
+
+    @FindBy(xpath = "//div[@class=\"message warning fadable\"]")
+    public WebElement warningMessage;
+
+    @FindBy(id = "divContent")
     public WebElement restConfirmation;
 
     @FindBy(id = "spanMessage")
@@ -54,11 +60,12 @@ public class OrangeHRM_ObjRepo {
     @FindBy(linkText = "Forgot your password?")
     public WebElement requestPasswordLink;
 
-    @FindBy(xpath = "//*[@id=\"content\"]/div[2]/span")
+    @FindBy(xpath = "//span[text()='( Username : Admin | Password : admin123 )']")
     public WebElement loginInfo;
 
-    @FindBy(xpath = "//*[@id=\"footer\"]/div[1]")
+    @FindBy(id = "footer")
     public WebElement loginPageFooter;
+
 
     //Dashboard Page
     @FindBy(xpath = "//span[text()='Assign Leave']")
@@ -79,7 +86,7 @@ public class OrangeHRM_ObjRepo {
     @FindBy(xpath = "//span[text()='My Timesheet']")
     public WebElement myTimesheetLink;
 
-    @FindBy(css = "#div_graph_display_emp_distribution > canvas.flot-overlay")
+    @FindBy(xpath = "//*[@class=\"flot-overlay\"]")
     public WebElement empDistributionCanvas;
 
     @FindBy(id = "panel_resizable_1_1")
@@ -126,7 +133,7 @@ public class OrangeHRM_ObjRepo {
     public WebElement membershipsLink;
 
     //edit My info
-    @FindBy(xpath = "//*[@id=\"btnSave\"]")
+    @FindBy(id = "btnSave")
     public WebElement editMyInfoButton;
 
     @FindBy(name = "personal[txtEmpFirstName]")
@@ -135,49 +142,180 @@ public class OrangeHRM_ObjRepo {
     @FindBy(name = "personal[txtEmpLastName]")
     public WebElement lastnameInputBox;
 
+    @FindBy(name = "personal[txtEmpMiddleName]")
+    public WebElement middleNameInputBox;
+
     @FindBy(name = "personal[txtEmployeeId]")
     public WebElement employeeIdInputBox;
 
     @FindBy(id = "personal_txtLicExpDate")
     public WebElement licenseExpDatePicker;
 
-    @FindBy(xpath = "//*[@id=\"frmEmpPersonalDetails\"]/fieldset/ol[3]/li[1]/ul/li[2]/label")
+    @FindBy(name = "personal[optGender]")
     public WebElement genderButtonForFemale;
 
-    @FindBy(xpath = "//select[@id='personal_cmbMarital']")
+    @FindBy(id = "personal_cmbMarital")
     public WebElement maritalStatusSelector;
 
-    @FindBy(xpath = "//*[@id=\"personal_cmbNation\"]")
+    @FindBy(id = "personal_txtLicExpDate")
+    public WebElement datePicker;
+
+    @FindBy(id = "personal_cmbNation")
     public WebElement nationalitySelector;
 
     @FindBy(id = "btnSave")
     public WebElement myInfoSaveButton;
 
-    @FindBy(id = "btnEditCustom")
+    @FindBy(xpath = "//div[@class=\"message success fadable\"]")
+    public WebElement infoSavedMessage;
+
+    @FindBy(id = "btnEditCustom")//btnEditCustom
     public WebElement customFieldEditButton;
 
+    @FindBy(name = "custom5")
+    public WebElement cityInputForEditCustom;
+
+    @FindBy(name = "custom2")
+    public WebElement genderDropdownList;
+
+    @FindBy(id = "btnEditCustom")
+    public WebElement saveButtonForEditCustom;
+
     @FindBy(name = "custom1")
-    public WebElement bloodTypeSelector;
+    public WebElement bloodTypeDropdownList;
 
-    @FindBy(xpath = "//*[@id=\'btnAddAttachment\']")
-    public WebElement addButtonForAddingAttachment;
+    @FindBy(xpath = "//div[@class=\"message success fadable\"]")
+    public WebElement savedConfirmMessage;
 
-    @FindBy(xpath = "//*[@id=\'ufile\']")
-    public WebElement addAttachmentForInfoPage;
+    @FindBy(id="custom3")
+    public WebElement countryInputField;
 
-    @FindBy(xpath = "//*[@id=\'txtAttDesc\']")
+    @FindBy(id = "btnAddAttachment")
+    public WebElement addAttachmentsButton;
+
+    @FindBy(id = "ufile")
+    public WebElement chooseFileInputField;
+
+    @FindBy(id = "txtAttDesc")
     public WebElement attachmentCommentField;
 
-    @FindBy(xpath = "//*[@id=\'btnSaveAttachment\']")
+    @FindBy(id = "btnSaveAttachment")
     public WebElement uploadAttachmentButton;
 
-    @FindBy(xpath = "//*[@id=\'btnAddAttachment\']")
-    public WebElement addAttachmentButton;
-
-    @FindBy(xpath = "//*[@id=\'tblAttachments\']/tbody/tr")
+    @FindBy(xpath = "//*[@class=\"odd\"]") //or //div[@class="message success fadable"]
     public WebElement attachmentListDisplayed;
 
+    @FindBy(id = "btnSave")
+    public WebElement editContactDetailsButton;
 
+    @FindBy(id = "contact_street1")
+    public WebElement street1InputField;
+
+    @FindBy(id = "contact_street2")
+    public WebElement street2InputField;
+
+    @FindBy(id = "contact_city")
+    public WebElement contactCityInputField;
+
+    @FindBy(id = "contact_province")
+    public WebElement contactStateInputField;
+
+    @FindBy(id = "contact_emp_zipcode")
+    public WebElement contactZipCodeField;
+
+    @FindBy(id = "contact_country")
+    public WebElement contactCountryDropdownList;
+
+    @FindBy(id = "btnSave")
+    public WebElement contactSaveButton;
+
+    @FindBy(xpath = "//div[@class=\"message success fadable\"]")
+    public WebElement contactInfoSavedMessage;
+
+    @FindBy(id = "btnAddContact")
+    public WebElement addEmgContactsButton;
+
+    @FindBy(id = "emgcontacts_name")
+    public WebElement emgContactsName;
+
+    @FindBy(id = "emgcontacts_relationship")
+    public WebElement emgContactsRelationship;
+
+    @FindBy(id = "emgcontacts_homePhone")
+    public WebElement emgContactsHomePhone;
+
+    @FindBy(id = "btnSaveEContact")
+    public WebElement emgContactsSaveButton;
+
+    @FindBy(xpath = "//*[@id=\"emgcontact_list\"]/tbody/tr[1]")
+    public WebElement verifyRecordAdded;
+
+    @FindBy(id = "btnAddDependent")
+    public WebElement addDependentsButton;
+
+    @FindBy(id = "dependent_name")
+    public WebElement nameForDependentInputField;
+
+    @FindBy(id = "dependent_relationshipType")
+    public WebElement relationshipForDependents;
+
+    @FindBy(id = "dependent_dateOfBirth")
+    public WebElement dateOfBirthInputField;
+
+    @FindBy(id = "btnSaveDependent")
+    public WebElement saveButtonForDependents;
+
+    @FindBy(xpath = "//div[@class=\"message success fadable\"]")
+    public WebElement verifySavedMessage;
+
+    //Add immigrant record
+    @FindBy(id = "btnAdd")
+    public WebElement addImmigrantRecordButton;
+
+    @FindBy(id = "immigration_type_flag_1")
+    public WebElement passportRadioButton;
+
+    @FindBy(id = "immigration_type_flag_2")
+    public WebElement visaRadioButton;
+
+    @FindBy(id = "immigration_number")
+    public WebElement numberInputField;
+
+    @FindBy(id = "immigration_passport_issue_date")
+    public WebElement issuedDateInputField;
+
+    @FindBy(id = "immigration_passport_expire_date")
+    public WebElement expireDateInputField;
+
+    @FindBy(id = "immigration_i9_status")
+    public WebElement eligibleStatusInputField;
+
+    @FindBy(id = "immigration_country")
+    public WebElement issuedBySelectList;
+
+    @FindBy(id = "immigration_i9_review_date")
+    public WebElement eligibleReviewDate;
+
+    @FindBy(id = "immigration_comments")
+    public WebElement commentForImmigrationRecord;
+
+    @FindBy(id = "btnSave")
+    public WebElement saveButtonForImmigrantRecord;
+
+    @FindBy(id = "immigrationHeading")
+    public  WebElement clickButton;
+
+    @FindBy(xpath ="//div[@class=\"message success fadable\"]")
+    public WebElement recordAddedMessage;
+
+    @FindBy(xpath = "//*[@id=\"frmImmigrationDelete\"]/table/tbody/tr[1]/td[1]/input")
+    public WebElement immigrationRecord;
+
+    @FindBy(id = "btnDelete")
+    public WebElement deleteImmigrationRecordButton;
+
+    @FindBy(xpath = "//div[@class='message success fadable']")
+    public WebElement deletedMessage;
 
     //Admin Page
     @FindBy(linkText = "Admin")
@@ -228,8 +366,11 @@ public class OrangeHRM_ObjRepo {
     @FindBy(linkText = "Languages")
     public WebElement languagesLink;
 
-    @FindBy(xpath = "//*[@id='menu_admin_membership']")
+    @FindBy(linkText = "Memberships")
     public WebElement membershipsLinkInAdminPage;
+
+    @FindBy(linkText = "Email Configuration")
+    public WebElement emailConfigurationLink;
 
     @FindBy(linkText = "Email Subscriptions")
     public WebElement emailSubscriptionsLink;
@@ -265,15 +406,15 @@ public class OrangeHRM_ObjRepo {
     public WebElement addUserButton;
 
     @FindBy(id = "systemUser_userType")
-    public WebElement userTypeForAddingUser;
+    public WebElement userRoleType;
 
-    @FindBy(xpath = "//*[@id=\"systemUser_userType\"]/option[1]")
-    public WebElement adminUserType;
+    @FindBy(id = "systemUser_userType")
+    public WebElement adminRole;
 
-    @FindBy(xpath = "//*[@id=\"systemUser_userType\"]/option[2]")
-    public WebElement essUserType;
+    @FindBy(id = "systemUser_userType")
+    public WebElement essRole;
 
-    @FindBy(xpath = "//*[@id=\"systemUser_employeeName_empName\"]")
+    @FindBy(id = "systemUser_employeeName_empName")
     public WebElement employeeNameTextbox;
 
     @FindBy(id = "systemUser_userName")
@@ -282,10 +423,10 @@ public class OrangeHRM_ObjRepo {
     @FindBy(id = "systemUser_status")
     public WebElement statusLabel;
 
-    @FindBy(xpath = "//*[@id=\"systemUser_status\"]/option[1]")
+    @FindBy(id = "systemUser_status")
     public WebElement enableStatusType;
 
-    @FindBy(xpath = "//*[@id=\"systemUser_status\"]/option[2]")
+    @FindBy(id = "systemUser_status")
     public WebElement disableStatusType;
 
     @FindBy(name = "systemUser[password]")
@@ -296,6 +437,9 @@ public class OrangeHRM_ObjRepo {
 
     @FindBy(id = "btnSave")
     public WebElement systemUserSaveButton;
+
+    @FindBy(xpath = "//div[@class=\"message success fadable\"]")
+    public WebElement successMessage;
 
     @FindBy(id = "searchSystemUser_userName")
     public WebElement searchUsernameField;
@@ -315,6 +459,235 @@ public class OrangeHRM_ObjRepo {
     @FindBy(xpath = "//*[@id=\"resultTable\"]/tbody/tr/td")
     public WebElement searchErrorMessage;
 
+    //add job title
+    @FindBy(id = "btnAdd")
+    public WebElement addJobTitleButton;
 
+    @FindBy(id = "jobTitle_jobTitle")
+    public WebElement jobTitleInputField;
+
+    @FindBy(id = "jobTitle_jobDescription")
+    public WebElement jobDescriptionInputField;
+
+    @FindBy(id = "btnSave")
+    public WebElement saveJobTitleButton;
+
+    @FindBy(linkText = "Business Manager")
+    public WebElement jobTitleAdded;
+
+    @FindBy(id = "btnDelete")
+    public WebElement deleteJobTitleButton;
+
+    @FindBy(name = "chkSelectRow[]")
+    public WebElement existingJobTitleLink;
+
+    @FindBy(id = "dialogDeleteBtn")
+    public WebElement okButtonForDeleteTitle;
+
+    @FindBy(xpath = "//div[@class=\"message success fadable\"]")
+    public WebElement deletedSuccessMessage;
+
+    //PIM page
+    @FindBy(id = "menu_pim_viewPimModule")
+    public WebElement pimLink;
+
+    @FindBy(linkText = "Configuration")
+    public WebElement configurationLinkOnPimPage;
+
+    @FindBy(linkText = "Optional Fields")
+    public WebElement optionalFieldsLink;
+
+    @FindBy(linkText = "Custom Fields")
+    public WebElement customFieldsLink;
+
+    @FindBy(linkText = "Data Import")
+    public WebElement dataImportLink;
+
+    @FindBy(linkText = "Reporting Methods")
+    public WebElement reportingMethodsLink;
+
+    @FindBy(linkText = "Termination Reasons")
+    public WebElement terminationReasonsLink;
+
+    @FindBy(linkText = "Employee List")
+    public WebElement employeeListLink;
+
+    @FindBy(linkText = "Add Employee")
+    public WebElement addEmployeeLink;
+
+    @FindBy(linkText = "Reports")
+    public WebElement reportsLink;
+
+    //add employee in PIM page
+    @FindBy(id = "firstName")
+    public WebElement employeeFirstnameInputField;
+
+    @FindBy(id = "lastName")
+    public WebElement employeeLastname;
+
+    @FindBy(id = "btnSave")
+    public WebElement saveEmployeeButton;
+
+    @FindBy(xpath = "//*[@id=\"profile-pic\"]/h1")
+    public WebElement profilePicHeader;
+
+    //Searching employee
+    @FindBy(id = "empsearch_employee_name_empName")
+    public WebElement employeeNameInputField;
+
+    @FindBy(id = "searchBtn")
+    public WebElement searchEmployeeButton;
+
+    @FindBy(css = "td[colspan=\"8\"]")
+    public WebElement searchNotFound;
+
+    //Leave List Page
+    @FindBy(id = "menu_leave_viewLeaveModule")
+    public WebElement leaveLink;
+
+    @FindBy(id = "menu_leave_applyLeave")
+    public WebElement applyLink;
+
+    @FindBy(id = "menu_leave_viewMyLeaveList")
+    public WebElement myLeaveLinkLeavePage;
+
+    @FindBy(linkText = "Entitlements")
+    public WebElement entitlementsLink;
+
+    @FindBy(linkText = "Add Entitlements")
+    public WebElement addEntitlementsLink;
+
+    @FindBy(linkText = "Employee Entitlements")
+    public WebElement employeeEntitlementsLink;
+
+    @FindBy(linkText = "My Entitlements")
+    public WebElement myEntitlementsLink;
+
+    @FindBy(linkText = "Reports")
+    public WebElement reportsLinkLeavePage;
+
+    @FindBy(linkText = "Leave Entitlements and Usage Report")
+    public WebElement leaveEntitlementReportLink;
+
+    @FindBy(linkText = "My Leave Entitlements and Usage Report")
+    public WebElement myLeaveEntitlementsReportLink;
+
+    @FindBy(linkText = "Configure")
+    public WebElement configureLink;
+
+    @FindBy(id = "menu_leave_defineLeavePeriod")
+    public WebElement menuLeavePeriodLink;
+
+    @FindBy(id = "menu_leave_leaveTypeList")
+    public WebElement leaveTypeListLink;
+
+    @FindBy(id = "menu_leave_defineWorkWeek")
+    public WebElement defineWorkWeekLink;
+
+    @FindBy(id = "menu_leave_viewHolidayList")
+    public WebElement viewHolidayListLink;
+
+    @FindBy(id = "menu_leave_viewLeaveList")
+    public WebElement viewLeaveListLink;
+
+    @FindBy(id = "menu_leave_assignLeave")
+    public WebElement assignLeaveLinkLeavePage;
+
+    @FindBy(name = "leaveList[calFromDate]")
+    public WebElement fromDateInput;
+
+    @FindBy(name = "leaveList[calToDate]")
+    public WebElement toDateInput;
+
+    @FindBy(id = "leaveList_chkSearchFilter_checkboxgroup_allcheck")
+    public WebElement withStatusCheckbox;
+
+    @FindBy(id = "leaveList_cmbSubunit")
+    public WebElement subUnitDropdownList;
+
+    @FindBy(id = "btnSearch")
+    public WebElement leaveListSearchButton;
+
+    @FindBy(xpath = "//*[@id=\"resultTable\"]/tbody/tr")
+    public WebElement leaveListResult;
+
+    @FindBy(id = "assignleave_txtEmployee_empName")
+    public WebElement assignEmployeeNameInput;
+
+    @FindBy(id = "assignleave_txtLeaveType")
+    public WebElement assignLeaveTypeList;
+
+    @FindBy(name = "assignleave[txtFromDate]")
+    public WebElement assignFromDateInput;
+
+    @FindBy(name = "assignleave[txtToDate]")
+    public WebElement assignToDateInput;
+
+    @FindBy(id = "assignleave_partialDays")
+    public WebElement partialDaysInput;
+
+    @FindBy(id = "assignleave_firstDuration_duration")
+    public WebElement durationDropdwonList;
+
+    @FindBy(id = "assignleave_firstDuration_ampm")
+    public WebElement durationTime;
+
+    @FindBy(id = "assignBtn")
+    public WebElement assignLeaveButton;
+
+    @FindBy(id = "confirmOkButton")
+    public WebElement okButtonForAssignList;
+
+    @FindBy(xpath = "//div[@class=\"message success fadable\"]")
+    public WebElement confirmedMessage;
+
+    //Time PAge
+    @FindBy(id = "menu_time_viewTimeModule")
+    public WebElement timeLink;
+
+    @FindBy(id = "menu_time_Timesheets")
+    public WebElement timeSheetsLinkTimePage;
+
+    @FindBy(id = "menu_time_viewMyTimesheet")
+    public WebElement myTimeSheetsLinkTimePage;
+
+    @FindBy(linkText = "Employee Timesheets")
+    public WebElement employeeTimeSheetsLink;
+
+    @FindBy(linkText = "Attendance")
+    public WebElement attendanceLink;
+
+    @FindBy(linkText = "My Records")
+    public WebElement myRecordsLink;
+
+    @FindBy(linkText = "Punch In/Out")
+    public WebElement punchInOutLink;
+
+    @FindBy(linkText = "Employee Records")
+    public WebElement employeeRecordsLink;
+
+    @FindBy(linkText = "Configuration")
+    public WebElement configurationLinkOnTimePage;
+
+    @FindBy(linkText = "Reports")
+    public WebElement reportsLinkTimePage;
+
+    @FindBy(linkText = "Project Reports")
+    public WebElement projectReportsLink;
+
+    @FindBy(linkText = "Employee Reports")
+    public WebElement employeeReportsLink;
+
+    @FindBy(linkText = "Attendance Summary")
+    public WebElement attendanceSummaryLink;
+
+    @FindBy(linkText = "Project Info")
+    public WebElement projectInfoLink;
+
+    @FindBy(linkText = "Customers")
+    public WebElement customersLink;
+
+    @FindBy(linkText = "Projects")
+    public WebElement projectsLink;
 }
 

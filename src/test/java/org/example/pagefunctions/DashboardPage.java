@@ -4,7 +4,7 @@ import org.example.commonfunctions.CommonFunctions;
 import org.example.objectrepo.OrangeHRM_ObjRepo;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
+import org.testng.Reporter;
 
 public class DashboardPage extends CommonFunctions {
     OrangeHRM_ObjRepo objRepo;
@@ -15,16 +15,16 @@ public class DashboardPage extends CommonFunctions {
 
     public void validateDashboardLinks(WebDriver driver)
     {
-        LoginPage loginPage=new LoginPage(driver);
-        loginPage.successfulLogin(driver);
-        Assert.assertTrue(objRepo.assignLeaveLink.isDisplayed());
-        Assert.assertTrue(objRepo.leaveListLink.isDisplayed());
-        Assert.assertTrue(objRepo.timeSheetsLink.isDisplayed());
-        Assert.assertTrue(objRepo.applyLeaveLink.isDisplayed());
-        Assert.assertTrue(objRepo.myLeaveLink.isDisplayed());
-        Assert.assertTrue(objRepo.myTimesheetLink.isDisplayed());
-        Assert.assertTrue(objRepo.empDistributionCanvas.isDisplayed());
-        Assert.assertTrue(objRepo.legendFieldSet.isDisplayed());
-        Assert.assertTrue(objRepo.pendingLeaveFieldSet.isDisplayed());
+        Reporter.log("Start validating all the links display on the 'Dashboard Page'");
+        validatePage(driver,objRepo.assignLeaveLink);
+        validatePage(driver,objRepo.leaveListLink);
+        validatePage(driver,objRepo.timeSheetsLink);
+        validatePage(driver,objRepo.applyLeaveLink);
+        validatePage(driver,objRepo.myLeaveLink);
+        validatePage(driver,objRepo.myTimesheetLink);
+        validatePage(driver,objRepo.empDistributionCanvas);
+        validatePage(driver,objRepo.legendFieldSet);
+        validatePage(driver,objRepo.pendingLeaveFieldSet);
+        Reporter.log("All links are displayed on the 'Dashboard Page'");
     }
 }
