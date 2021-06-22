@@ -58,9 +58,10 @@ public class CommonFunctions {
     }
 
     //upload files
-    public void uploadFile(WebDriver driver, By locator, String path){
-        driver.findElement(locator).sendKeys(path);
+    public void uploadFile(WebDriver driver, WebElement element, String path){
+        element.sendKeys(System.getProperty("user.dir")+path);
     }
+
 
     //input date
     public void inputDate(WebDriver driver, WebElement inputElem, String inputDate) {

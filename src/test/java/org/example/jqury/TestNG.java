@@ -18,7 +18,7 @@ public class TestNG {
     @BeforeClass
     public void setup()
     {
-        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "//drivers//chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "//drivers//chromedriver");
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
         driver = new ChromeDriver(chromeOptions);
@@ -34,10 +34,15 @@ public class TestNG {
         JavascriptExecutor jse = (JavascriptExecutor) driver;
         jse.executeScript("window.scrollBy(0,300)");
         WebElement draggablePage = driver.findElement(By.tagName("iframe"));
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].setAttribute('style', 'background: green; border: 3px solid blue;');",
+                draggablePage);
         waitForElement(driver, draggablePage);
         driver.switchTo().frame(draggablePage);
         sleep(1);
         WebElement draggableObject = driver.findElement(By.cssSelector(".ui-widget-content.ui-draggable.ui-draggable-handle"));
+        js.executeScript("arguments[0].setAttribute('style', 'background: green; border: 3px solid blue;');",
+                draggableObject);
         //Actions actions = new Actions(driver);
         Point beforeDrag = draggableObject.getLocation();
         int beforeDragToX = beforeDrag.getX();
@@ -59,6 +64,9 @@ public class TestNG {
         WebElement droppablePage = driver.findElement(By.tagName("iframe"));
         driver.switchTo().frame(droppablePage);
         WebElement draggable = driver.findElement(By.id("draggable"));
+        JavascriptExecutor jse2 = (JavascriptExecutor) driver;
+        jse2.executeScript("arguments[0].setAttribute('style', 'background: green; border: 3px solid blue;');",
+                draggable);
         WebElement droppable = driver.findElement(By.id("droppable"));
         Actions actions=new Actions(driver);
         actions.dragAndDrop(draggable, droppable).build().perform();

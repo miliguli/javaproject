@@ -3,7 +3,6 @@ package org.example.pagefunctions;
 import org.example.commonfunctions.CommonFunctions;
 import org.example.commonvariables.CommonVariables;
 import org.example.objectrepo.OrangeHRM_ObjRepo;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
@@ -116,7 +115,7 @@ public class MyInfoPage extends CommonFunctions {
         //uploading file
         waitForElementVisible(driver, objRepo.chooseFileInputField);
         highlightElements(driver, objRepo.chooseFileInputField);
-        uploadFile(driver, By.xpath("//*[@id=\'ufile\']"), CommonVariables.orangeHRM_MyInfoFilePath);
+        uploadFile(driver,objRepo.uploadFile,CommonVariables.orangeHRM_MyInfoFilePath);
         sleep(1);
         //leave comment
         waitForElementVisible(driver, objRepo.attachmentCommentField);

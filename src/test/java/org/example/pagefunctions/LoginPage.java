@@ -81,7 +81,7 @@ public class LoginPage extends CommonFunctions {
         sleep(1);
         highlightElements(driver,objRepo.resetPasswordButton);
         findButtonClick(objRepo.resetPasswordButton);
-        sleep(1);
+        sleep(2);
         highlightElements(driver,objRepo.warningMessage);
         Assert.assertTrue(objRepo.warningMessage.isDisplayed());
         Reporter.log("'resetting password request sent' confirmation message is displayed ");
