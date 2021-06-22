@@ -1,0 +1,1713 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="31" passed="31" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Reading config.properties file from the path:/Users/nur428/IdeaProjects/javaproject/src/main/java/org/example/data/config.properties]]>
+    </line>
+    <line>
+      <![CDATA[Initializing chrome browser]]>
+    </line>
+    <line>
+      <![CDATA[Initializing Chrome Browser]]>
+    </line>
+    <line>
+      <![CDATA[Application started]]>
+    </line>
+    <line>
+      <![CDATA[Logged in Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Start logging out from the Application]]>
+    </line>
+    <line>
+      <![CDATA[Logged out successfully]]>
+    </line>
+    <line>
+      <![CDATA[Browser session end]]>
+    </line>
+    <line>
+      <![CDATA[Initializing chrome browser]]>
+    </line>
+    <line>
+      <![CDATA[Initializing Chrome Browser]]>
+    </line>
+    <line>
+      <![CDATA[Application started]]>
+    </line>
+    <line>
+      <![CDATA[Resetting password]]>
+    </line>
+    <line>
+      <![CDATA['resetting password request sent' confirmation message is displayed ]]>
+    </line>
+    <line>
+      <![CDATA[Browser session end]]>
+    </line>
+    <line>
+      <![CDATA[Initializing chrome browser]]>
+    </line>
+    <line>
+      <![CDATA[Initializing Chrome Browser]]>
+    </line>
+    <line>
+      <![CDATA[Application started]]>
+    </line>
+    <line>
+      <![CDATA[Logging using valid username with invalid password ]]>
+    </line>
+    <line>
+      <![CDATA[cannot login with invalid password]]>
+    </line>
+    <line>
+      <![CDATA[Browser session end]]>
+    </line>
+    <line>
+      <![CDATA[Initializing chrome browser]]>
+    </line>
+    <line>
+      <![CDATA[Initializing Chrome Browser]]>
+    </line>
+    <line>
+      <![CDATA[Application started]]>
+    </line>
+    <line>
+      <![CDATA[Logging using invalid Username with valid password]]>
+    </line>
+    <line>
+      <![CDATA[cannot login with invalid username ]]>
+    </line>
+    <line>
+      <![CDATA[Browser session end]]>
+    </line>
+    <line>
+      <![CDATA[Initializing chrome browser]]>
+    </line>
+    <line>
+      <![CDATA[Initializing Chrome Browser]]>
+    </line>
+    <line>
+      <![CDATA[Application started]]>
+    </line>
+    <line>
+      <![CDATA[Logging with empty username]]>
+    </line>
+    <line>
+      <![CDATA[cannot login with empty username ]]>
+    </line>
+    <line>
+      <![CDATA[Browser session end]]>
+    </line>
+    <line>
+      <![CDATA[Initializing chrome browser]]>
+    </line>
+    <line>
+      <![CDATA[Initializing Chrome Browser]]>
+    </line>
+    <line>
+      <![CDATA[Application started]]>
+    </line>
+    <line>
+      <![CDATA[Logging with empty password]]>
+    </line>
+    <line>
+      <![CDATA[cannot login with invalid password]]>
+    </line>
+    <line>
+      <![CDATA[Browser session end]]>
+    </line>
+    <line>
+      <![CDATA[Initializing chrome browser]]>
+    </line>
+    <line>
+      <![CDATA[Initializing Chrome Browser]]>
+    </line>
+    <line>
+      <![CDATA[Application started]]>
+    </line>
+    <line>
+      <![CDATA[Requesting new password ]]>
+    </line>
+    <line>
+      <![CDATA[cannot find user message is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Browser session end]]>
+    </line>
+    <line>
+      <![CDATA[Initializing chrome browser]]>
+    </line>
+    <line>
+      <![CDATA[Initializing Chrome Browser]]>
+    </line>
+    <line>
+      <![CDATA[Application started]]>
+    </line>
+    <line>
+      <![CDATA[Requesting password using special Character]]>
+    </line>
+    <line>
+      <![CDATA[cannot reset password with special characters]]>
+    </line>
+    <line>
+      <![CDATA[Browser session end]]>
+    </line>
+    <line>
+      <![CDATA[Initializing chrome browser]]>
+    </line>
+    <line>
+      <![CDATA[Initializing Chrome Browser]]>
+    </line>
+    <line>
+      <![CDATA[Application started]]>
+    </line>
+    <line>
+      <![CDATA[Validating all the Texts and links display on the login page]]>
+    </line>
+    <line>
+      <![CDATA[All the links and text are validated]]>
+    </line>
+    <line>
+      <![CDATA[Browser session end]]>
+    </line>
+    <line>
+      <![CDATA[Initializing chrome browser]]>
+    </line>
+    <line>
+      <![CDATA[Initializing Chrome Browser]]>
+    </line>
+    <line>
+      <![CDATA[Application started]]>
+    </line>
+    <line>
+      <![CDATA[Logged in Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Start validating all the links display on the 'Dashboard Page']]>
+    </line>
+    <line>
+      <![CDATA[All links are displayed on the 'Dashboard Page']]>
+    </line>
+    <line>
+      <![CDATA[Browser session end]]>
+    </line>
+    <line>
+      <![CDATA[Initializing chrome browser]]>
+    </line>
+    <line>
+      <![CDATA[Initializing Chrome Browser]]>
+    </line>
+    <line>
+      <![CDATA[Application started]]>
+    </line>
+    <line>
+      <![CDATA[Logged in Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Start validating all the links on 'My Info Page']]>
+    </line>
+    <line>
+      <![CDATA[All the links are displayed on the MyInfo page]]>
+    </line>
+    <line>
+      <![CDATA[Browser session end]]>
+    </line>
+    <line>
+      <![CDATA[Initializing chrome browser]]>
+    </line>
+    <line>
+      <![CDATA[Initializing Chrome Browser]]>
+    </line>
+    <line>
+      <![CDATA[Application started]]>
+    </line>
+    <line>
+      <![CDATA[Logged in Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Start editing personal information on 'MyInfo Page']]>
+    </line>
+    <line>
+      <![CDATA[Selecting marital status]]>
+    </line>
+    <line>
+      <![CDATA[Selecting nationality from dropdown list]]>
+    </line>
+    <line>
+      <![CDATA['Personal details' got updated]]>
+    </line>
+    <line>
+      <![CDATA[Browser session end]]>
+    </line>
+    <line>
+      <![CDATA[Initializing chrome browser]]>
+    </line>
+    <line>
+      <![CDATA[Initializing Chrome Browser]]>
+    </line>
+    <line>
+      <![CDATA[Application started]]>
+    </line>
+    <line>
+      <![CDATA[Logged in Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Start editing 'Custom Fields' on MyInfo Page]]>
+    </line>
+    <line>
+      <![CDATA[Adding file to the personal information page]]>
+    </line>
+    <line>
+      <![CDATA['Custom Fields' on MyInfo Page is updated]]>
+    </line>
+    <line>
+      <![CDATA[Browser session end]]>
+    </line>
+    <line>
+      <![CDATA[Initializing chrome browser]]>
+    </line>
+    <line>
+      <![CDATA[Initializing Chrome Browser]]>
+    </line>
+    <line>
+      <![CDATA[Application started]]>
+    </line>
+    <line>
+      <![CDATA[Logged in Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Start editing My information on 'MyInfo Page']]>
+    </line>
+    <line>
+      <![CDATA[Start editing 'Contact Details']]>
+    </line>
+    <line>
+      <![CDATA[Contact details are updated]]>
+    </line>
+    <line>
+      <![CDATA[Browser session end]]>
+    </line>
+    <line>
+      <![CDATA[Initializing chrome browser]]>
+    </line>
+    <line>
+      <![CDATA[Initializing Chrome Browser]]>
+    </line>
+    <line>
+      <![CDATA[Application started]]>
+    </line>
+    <line>
+      <![CDATA[Logged in Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Start editing My information on 'MyInfo Page']]>
+    </line>
+    <line>
+      <![CDATA[Start editing 'Emergency Contacts']]>
+    </line>
+    <line>
+      <![CDATA[ 'Adding Emergency Contact' test passed]]>
+    </line>
+    <line>
+      <![CDATA[Browser session end]]>
+    </line>
+    <line>
+      <![CDATA[Initializing chrome browser]]>
+    </line>
+    <line>
+      <![CDATA[Initializing Chrome Browser]]>
+    </line>
+    <line>
+      <![CDATA[Application started]]>
+    </line>
+    <line>
+      <![CDATA[Logged in Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Start editing My information on 'MyInfo Page']]>
+    </line>
+    <line>
+      <![CDATA[Start adding 'Emergency Contacts']]>
+    </line>
+    <line>
+      <![CDATA[A dependent is added successfully]]>
+    </line>
+    <line>
+      <![CDATA[Browser session end]]>
+    </line>
+    <line>
+      <![CDATA[Initializing chrome browser]]>
+    </line>
+    <line>
+      <![CDATA[Initializing Chrome Browser]]>
+    </line>
+    <line>
+      <![CDATA[Application started]]>
+    </line>
+    <line>
+      <![CDATA[Logged in Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Start editing My information on 'MyInfo Page']]>
+    </line>
+    <line>
+      <![CDATA[Start adding 'Immigrant Records']]>
+    </line>
+    <line>
+      <![CDATA[one immigration record added to the page ]]>
+    </line>
+    <line>
+      <![CDATA[Browser session end]]>
+    </line>
+    <line>
+      <![CDATA[Initializing chrome browser]]>
+    </line>
+    <line>
+      <![CDATA[Initializing Chrome Browser]]>
+    </line>
+    <line>
+      <![CDATA[Application started]]>
+    </line>
+    <line>
+      <![CDATA[Logged in Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Start editing my information on 'MyInfo Page']]>
+    </line>
+    <line>
+      <![CDATA[Start deleting 'Immigrant Records']]>
+    </line>
+    <line>
+      <![CDATA[Immigration record got deleted]]>
+    </line>
+    <line>
+      <![CDATA[Browser session end]]>
+    </line>
+    <line>
+      <![CDATA[Initializing chrome browser]]>
+    </line>
+    <line>
+      <![CDATA[Initializing Chrome Browser]]>
+    </line>
+    <line>
+      <![CDATA[Application started]]>
+    </line>
+    <line>
+      <![CDATA[Logged in Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Start validating user management list on the Admin page]]>
+    </line>
+    <line>
+      <![CDATA[All the links on the admin page are validated]]>
+    </line>
+    <line>
+      <![CDATA[Browser session end]]>
+    </line>
+    <line>
+      <![CDATA[Initializing chrome browser]]>
+    </line>
+    <line>
+      <![CDATA[Initializing Chrome Browser]]>
+    </line>
+    <line>
+      <![CDATA[Application started]]>
+    </line>
+    <line>
+      <![CDATA[Logged in Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Navigate to admin page]]>
+    </line>
+    <line>
+      <![CDATA[System user added successfully]]>
+    </line>
+    <line>
+      <![CDATA[Browser session end]]>
+    </line>
+    <line>
+      <![CDATA[Initializing chrome browser]]>
+    </line>
+    <line>
+      <![CDATA[Initializing Chrome Browser]]>
+    </line>
+    <line>
+      <![CDATA[Application started]]>
+    </line>
+    <line>
+      <![CDATA[Logged in Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Start navigating to admin page]]>
+    </line>
+    <line>
+      <![CDATA[Start searching system user]]>
+    </line>
+    <line>
+      <![CDATA[One record is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Browser session end]]>
+    </line>
+    <line>
+      <![CDATA[Initializing chrome browser]]>
+    </line>
+    <line>
+      <![CDATA[Initializing Chrome Browser]]>
+    </line>
+    <line>
+      <![CDATA[Application started]]>
+    </line>
+    <line>
+      <![CDATA[Logged in Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Searching an invalid system user on the admin page]]>
+    </line>
+    <line>
+      <![CDATA['No record found' message is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Browser session end]]>
+    </line>
+    <line>
+      <![CDATA[Initializing chrome browser]]>
+    </line>
+    <line>
+      <![CDATA[Initializing Chrome Browser]]>
+    </line>
+    <line>
+      <![CDATA[Application started]]>
+    </line>
+    <line>
+      <![CDATA[Logged in Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Start adding job title to the admin page]]>
+    </line>
+    <line>
+      <![CDATA[One job title Added to the page]]>
+    </line>
+    <line>
+      <![CDATA[Browser session end]]>
+    </line>
+    <line>
+      <![CDATA[Initializing chrome browser]]>
+    </line>
+    <line>
+      <![CDATA[Initializing Chrome Browser]]>
+    </line>
+    <line>
+      <![CDATA[Application started]]>
+    </line>
+    <line>
+      <![CDATA[Logged in Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Start deleting a job title on the admin page]]>
+    </line>
+    <line>
+      <![CDATA[One job title got deleted]]>
+    </line>
+    <line>
+      <![CDATA[Browser session end]]>
+    </line>
+    <line>
+      <![CDATA[Initializing chrome browser]]>
+    </line>
+    <line>
+      <![CDATA[Initializing Chrome Browser]]>
+    </line>
+    <line>
+      <![CDATA[Application started]]>
+    </line>
+    <line>
+      <![CDATA[Logged in Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Start validating all the links on 'PIM Page']]>
+    </line>
+    <line>
+      <![CDATA[All the links on the pim page are displayed]]>
+    </line>
+    <line>
+      <![CDATA[Browser session end]]>
+    </line>
+    <line>
+      <![CDATA[Initializing chrome browser]]>
+    </line>
+    <line>
+      <![CDATA[Initializing Chrome Browser]]>
+    </line>
+    <line>
+      <![CDATA[Application started]]>
+    </line>
+    <line>
+      <![CDATA[Logged in Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Start adding an employee on 'PIM Page']]>
+    </line>
+    <line>
+      <![CDATA[Employee added successfully]]>
+    </line>
+    <line>
+      <![CDATA[Browser session end]]>
+    </line>
+    <line>
+      <![CDATA[Initializing chrome browser]]>
+    </line>
+    <line>
+      <![CDATA[Initializing Chrome Browser]]>
+    </line>
+    <line>
+      <![CDATA[Application started]]>
+    </line>
+    <line>
+      <![CDATA[Logged in Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Start searching an employee on 'PIM Page']]>
+    </line>
+    <line>
+      <![CDATA[Browser session end]]>
+    </line>
+    <line>
+      <![CDATA[Initializing chrome browser]]>
+    </line>
+    <line>
+      <![CDATA[Initializing Chrome Browser]]>
+    </line>
+    <line>
+      <![CDATA[Application started]]>
+    </line>
+    <line>
+      <![CDATA[Logged in Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Navigating to the Leave page]]>
+    </line>
+    <line>
+      <![CDATA[All the links are displayed on the leave page]]>
+    </line>
+    <line>
+      <![CDATA[Browser session end]]>
+    </line>
+    <line>
+      <![CDATA[Initializing chrome browser]]>
+    </line>
+    <line>
+      <![CDATA[Initializing Chrome Browser]]>
+    </line>
+    <line>
+      <![CDATA[Application started]]>
+    </line>
+    <line>
+      <![CDATA[Logged in Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Navigating to the Leave page]]>
+    </line>
+    <line>
+      <![CDATA[Start assigning a leave list]]>
+    </line>
+    <line>
+      <![CDATA[One leave list assigned to the page]]>
+    </line>
+    <line>
+      <![CDATA[Browser session end]]>
+    </line>
+    <line>
+      <![CDATA[Initializing chrome browser]]>
+    </line>
+    <line>
+      <![CDATA[Initializing Chrome Browser]]>
+    </line>
+    <line>
+      <![CDATA[Application started]]>
+    </line>
+    <line>
+      <![CDATA[Logged in Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Start navigating to the Leave page]]>
+    </line>
+    <line>
+      <![CDATA[Start searching leave list]]>
+    </line>
+    <line>
+      <![CDATA[searching result is displayed]]>
+    </line>
+    <line>
+      <![CDATA[Browser session end]]>
+    </line>
+    <line>
+      <![CDATA[Initializing chrome browser]]>
+    </line>
+    <line>
+      <![CDATA[Initializing Chrome Browser]]>
+    </line>
+    <line>
+      <![CDATA[Application started]]>
+    </line>
+    <line>
+      <![CDATA[Logged in Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Navigate to the time page]]>
+    </line>
+    <line>
+      <![CDATA[All the links on the time page are displayed]]>
+    </line>
+    <line>
+      <![CDATA[Browser session end]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2021-06-22T01:08:53Z" name="All Test Suite" finished-at="2021-06-22T01:16:16Z" duration-ms="443553">
+    <groups>
+    </groups>
+    <test started-at="2021-06-22T01:08:53Z" name="/Users/nur428/IdeaProjects/javaproject" finished-at="2021-06-22T01:16:16Z" duration-ms="443553">
+      <class name="org.example.testflows.OrangeHRMTestFlow">
+        <test-method is-config="true" signature="beforeEachClass()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:08:53Z" name="beforeEachClass" finished-at="2021-06-22T01:08:53Z" duration-ms="40" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Reading config.properties file from the path:/Users/nur428/IdeaProjects/javaproject/src/main/java/org/example/data/config.properties]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeEachClass -->
+        <test-method is-config="true" signature="beforeEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:08:53Z" name="beforeEachMethod" finished-at="2021-06-22T01:08:58Z" duration-ms="4651" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing chrome browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeEachMethod -->
+        <test-method signature="loginTest()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:08:58Z" name="loginTest" finished-at="2021-06-22T01:09:04Z" duration-ms="6883" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing Chrome Browser]]>
+            </line>
+            <line>
+              <![CDATA[Application started]]>
+            </line>
+            <line>
+              <![CDATA[Logged in Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Start logging out from the Application]]>
+            </line>
+            <line>
+              <![CDATA[Logged out successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="afterEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:09:04Z" name="afterEachMethod" finished-at="2021-06-22T01:09:05Z" duration-ms="199" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser session end]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterEachMethod -->
+        <test-method is-config="true" signature="beforeEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:09:05Z" name="beforeEachMethod" finished-at="2021-06-22T01:09:07Z" duration-ms="2236" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing chrome browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeEachMethod -->
+        <test-method signature="resetPasswordTest()[pri:1, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:09:07Z" name="resetPasswordTest" finished-at="2021-06-22T01:09:14Z" duration-ms="7262" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing Chrome Browser]]>
+            </line>
+            <line>
+              <![CDATA[Application started]]>
+            </line>
+            <line>
+              <![CDATA[Resetting password]]>
+            </line>
+            <line>
+              <![CDATA['resetting password request sent' confirmation message is displayed ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- resetPasswordTest -->
+        <test-method is-config="true" signature="afterEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:09:14Z" name="afterEachMethod" finished-at="2021-06-22T01:09:14Z" duration-ms="154" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser session end]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterEachMethod -->
+        <test-method is-config="true" signature="beforeEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:09:14Z" name="beforeEachMethod" finished-at="2021-06-22T01:09:17Z" duration-ms="2523" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing chrome browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeEachMethod -->
+        <test-method signature="invalidPasswordTest()[pri:2, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:09:17Z" name="invalidPasswordTest" finished-at="2021-06-22T01:09:21Z" duration-ms="4415" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing Chrome Browser]]>
+            </line>
+            <line>
+              <![CDATA[Application started]]>
+            </line>
+            <line>
+              <![CDATA[Logging using valid username with invalid password ]]>
+            </line>
+            <line>
+              <![CDATA[cannot login with invalid password]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- invalidPasswordTest -->
+        <test-method is-config="true" signature="afterEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:09:21Z" name="afterEachMethod" finished-at="2021-06-22T01:09:21Z" duration-ms="162" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser session end]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterEachMethod -->
+        <test-method is-config="true" signature="beforeEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:09:21Z" name="beforeEachMethod" finished-at="2021-06-22T01:09:24Z" duration-ms="2158" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing chrome browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeEachMethod -->
+        <test-method signature="invalidUsernameTest()[pri:3, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:09:24Z" name="invalidUsernameTest" finished-at="2021-06-22T01:09:26Z" duration-ms="2829" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing Chrome Browser]]>
+            </line>
+            <line>
+              <![CDATA[Application started]]>
+            </line>
+            <line>
+              <![CDATA[Logging using invalid Username with valid password]]>
+            </line>
+            <line>
+              <![CDATA[cannot login with invalid username ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- invalidUsernameTest -->
+        <test-method is-config="true" signature="afterEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:09:26Z" name="afterEachMethod" finished-at="2021-06-22T01:09:27Z" duration-ms="171" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser session end]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterEachMethod -->
+        <test-method is-config="true" signature="beforeEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:09:27Z" name="beforeEachMethod" finished-at="2021-06-22T01:09:29Z" duration-ms="2398" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing chrome browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeEachMethod -->
+        <test-method signature="emptyUsernameTest()[pri:4, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:09:29Z" name="emptyUsernameTest" finished-at="2021-06-22T01:09:31Z" duration-ms="2369" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing Chrome Browser]]>
+            </line>
+            <line>
+              <![CDATA[Application started]]>
+            </line>
+            <line>
+              <![CDATA[Logging with empty username]]>
+            </line>
+            <line>
+              <![CDATA[cannot login with empty username ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- emptyUsernameTest -->
+        <test-method is-config="true" signature="afterEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:09:31Z" name="afterEachMethod" finished-at="2021-06-22T01:09:31Z" duration-ms="149" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser session end]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterEachMethod -->
+        <test-method is-config="true" signature="beforeEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:09:31Z" name="beforeEachMethod" finished-at="2021-06-22T01:09:34Z" duration-ms="2111" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing chrome browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeEachMethod -->
+        <test-method signature="emptyPasswordTest()[pri:5, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:09:34Z" name="emptyPasswordTest" finished-at="2021-06-22T01:09:36Z" duration-ms="2572" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing Chrome Browser]]>
+            </line>
+            <line>
+              <![CDATA[Application started]]>
+            </line>
+            <line>
+              <![CDATA[Logging with empty password]]>
+            </line>
+            <line>
+              <![CDATA[cannot login with invalid password]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- emptyPasswordTest -->
+        <test-method is-config="true" signature="afterEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:09:36Z" name="afterEachMethod" finished-at="2021-06-22T01:09:36Z" duration-ms="146" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser session end]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterEachMethod -->
+        <test-method is-config="true" signature="beforeEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:09:36Z" name="beforeEachMethod" finished-at="2021-06-22T01:09:39Z" duration-ms="2391" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing chrome browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeEachMethod -->
+        <test-method signature="passwordResettingErrorTest()[pri:6, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:09:39Z" name="passwordResettingErrorTest" finished-at="2021-06-22T01:09:41Z" duration-ms="2512" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing Chrome Browser]]>
+            </line>
+            <line>
+              <![CDATA[Application started]]>
+            </line>
+            <line>
+              <![CDATA[Requesting new password ]]>
+            </line>
+            <line>
+              <![CDATA[cannot find user message is displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- passwordResettingErrorTest -->
+        <test-method is-config="true" signature="afterEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:09:41Z" name="afterEachMethod" finished-at="2021-06-22T01:09:41Z" duration-ms="151" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser session end]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterEachMethod -->
+        <test-method is-config="true" signature="beforeEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:09:41Z" name="beforeEachMethod" finished-at="2021-06-22T01:09:44Z" duration-ms="2409" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing chrome browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeEachMethod -->
+        <test-method signature="passwordResettingErrorWithSpecialCharacterTest()[pri:7, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:09:44Z" name="passwordResettingErrorWithSpecialCharacterTest" finished-at="2021-06-22T01:09:47Z" duration-ms="3006" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing Chrome Browser]]>
+            </line>
+            <line>
+              <![CDATA[Application started]]>
+            </line>
+            <line>
+              <![CDATA[Requesting password using special Character]]>
+            </line>
+            <line>
+              <![CDATA[cannot reset password with special characters]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- passwordResettingErrorWithSpecialCharacterTest -->
+        <test-method is-config="true" signature="afterEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:09:47Z" name="afterEachMethod" finished-at="2021-06-22T01:09:47Z" duration-ms="145" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser session end]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterEachMethod -->
+        <test-method is-config="true" signature="beforeEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:09:47Z" name="beforeEachMethod" finished-at="2021-06-22T01:09:49Z" duration-ms="2201" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing chrome browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeEachMethod -->
+        <test-method signature="validateLoginPageTextTest()[pri:8, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:09:49Z" name="validateLoginPageTextTest" finished-at="2021-06-22T01:09:56Z" duration-ms="6485" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing Chrome Browser]]>
+            </line>
+            <line>
+              <![CDATA[Application started]]>
+            </line>
+            <line>
+              <![CDATA[Validating all the Texts and links display on the login page]]>
+            </line>
+            <line>
+              <![CDATA[All the links and text are validated]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validateLoginPageTextTest -->
+        <test-method is-config="true" signature="afterEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:09:56Z" name="afterEachMethod" finished-at="2021-06-22T01:09:56Z" duration-ms="181" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser session end]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterEachMethod -->
+        <test-method is-config="true" signature="beforeEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:09:56Z" name="beforeEachMethod" finished-at="2021-06-22T01:09:58Z" duration-ms="2353" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing chrome browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeEachMethod -->
+        <test-method signature="validateDashboardPageLinksTest()[pri:9, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:09:58Z" name="validateDashboardPageLinksTest" finished-at="2021-06-22T01:10:12Z" duration-ms="14298" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing Chrome Browser]]>
+            </line>
+            <line>
+              <![CDATA[Application started]]>
+            </line>
+            <line>
+              <![CDATA[Logged in Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Start validating all the links display on the 'Dashboard Page']]>
+            </line>
+            <line>
+              <![CDATA[All links are displayed on the 'Dashboard Page']]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validateDashboardPageLinksTest -->
+        <test-method is-config="true" signature="afterEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:10:12Z" name="afterEachMethod" finished-at="2021-06-22T01:10:13Z" duration-ms="174" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser session end]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterEachMethod -->
+        <test-method is-config="true" signature="beforeEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:10:13Z" name="beforeEachMethod" finished-at="2021-06-22T01:10:15Z" duration-ms="2444" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing chrome browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeEachMethod -->
+        <test-method signature="validateMyInfoPageTest()[pri:10, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:10:15Z" name="validateMyInfoPageTest" finished-at="2021-06-22T01:10:33Z" duration-ms="17921" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing Chrome Browser]]>
+            </line>
+            <line>
+              <![CDATA[Application started]]>
+            </line>
+            <line>
+              <![CDATA[Logged in Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Start validating all the links on 'My Info Page']]>
+            </line>
+            <line>
+              <![CDATA[All the links are displayed on the MyInfo page]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validateMyInfoPageTest -->
+        <test-method is-config="true" signature="afterEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:10:33Z" name="afterEachMethod" finished-at="2021-06-22T01:10:33Z" duration-ms="170" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser session end]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterEachMethod -->
+        <test-method is-config="true" signature="beforeEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:10:33Z" name="beforeEachMethod" finished-at="2021-06-22T01:10:35Z" duration-ms="2381" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing chrome browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeEachMethod -->
+        <test-method signature="editMyPersonalInfoTest()[pri:11, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:10:35Z" name="editMyPersonalInfoTest" finished-at="2021-06-22T01:10:48Z" duration-ms="12014" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing Chrome Browser]]>
+            </line>
+            <line>
+              <![CDATA[Application started]]>
+            </line>
+            <line>
+              <![CDATA[Logged in Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Start editing personal information on 'MyInfo Page']]>
+            </line>
+            <line>
+              <![CDATA[Selecting marital status]]>
+            </line>
+            <line>
+              <![CDATA[Selecting nationality from dropdown list]]>
+            </line>
+            <line>
+              <![CDATA['Personal details' got updated]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- editMyPersonalInfoTest -->
+        <test-method is-config="true" signature="afterEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:10:48Z" name="afterEachMethod" finished-at="2021-06-22T01:10:48Z" duration-ms="178" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser session end]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterEachMethod -->
+        <test-method is-config="true" signature="beforeEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:10:48Z" name="beforeEachMethod" finished-at="2021-06-22T01:10:50Z" duration-ms="2266" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing chrome browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeEachMethod -->
+        <test-method signature="editCustomFieldTest()[pri:12, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:10:50Z" name="editCustomFieldTest" finished-at="2021-06-22T01:11:04Z" duration-ms="13836" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing Chrome Browser]]>
+            </line>
+            <line>
+              <![CDATA[Application started]]>
+            </line>
+            <line>
+              <![CDATA[Logged in Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Start editing 'Custom Fields' on MyInfo Page]]>
+            </line>
+            <line>
+              <![CDATA[Adding file to the personal information page]]>
+            </line>
+            <line>
+              <![CDATA['Custom Fields' on MyInfo Page is updated]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- editCustomFieldTest -->
+        <test-method is-config="true" signature="afterEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:11:04Z" name="afterEachMethod" finished-at="2021-06-22T01:11:04Z" duration-ms="175" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser session end]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterEachMethod -->
+        <test-method is-config="true" signature="beforeEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:11:04Z" name="beforeEachMethod" finished-at="2021-06-22T01:11:07Z" duration-ms="2543" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing chrome browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeEachMethod -->
+        <test-method signature="editContactDetailsTest()[pri:13, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:11:07Z" name="editContactDetailsTest" finished-at="2021-06-22T01:11:24Z" duration-ms="17025" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing Chrome Browser]]>
+            </line>
+            <line>
+              <![CDATA[Application started]]>
+            </line>
+            <line>
+              <![CDATA[Logged in Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Start editing My information on 'MyInfo Page']]>
+            </line>
+            <line>
+              <![CDATA[Start editing 'Contact Details']]>
+            </line>
+            <line>
+              <![CDATA[Contact details are updated]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- editContactDetailsTest -->
+        <test-method is-config="true" signature="afterEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:11:24Z" name="afterEachMethod" finished-at="2021-06-22T01:11:24Z" duration-ms="182" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser session end]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterEachMethod -->
+        <test-method is-config="true" signature="beforeEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:11:24Z" name="beforeEachMethod" finished-at="2021-06-22T01:11:26Z" duration-ms="2210" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing chrome browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeEachMethod -->
+        <test-method signature="addEmergencyContactsTest()[pri:14, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:11:26Z" name="addEmergencyContactsTest" finished-at="2021-06-22T01:11:38Z" duration-ms="12214" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing Chrome Browser]]>
+            </line>
+            <line>
+              <![CDATA[Application started]]>
+            </line>
+            <line>
+              <![CDATA[Logged in Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Start editing My information on 'MyInfo Page']]>
+            </line>
+            <line>
+              <![CDATA[Start editing 'Emergency Contacts']]>
+            </line>
+            <line>
+              <![CDATA[ 'Adding Emergency Contact' test passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addEmergencyContactsTest -->
+        <test-method is-config="true" signature="afterEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:11:38Z" name="afterEachMethod" finished-at="2021-06-22T01:11:38Z" duration-ms="168" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser session end]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterEachMethod -->
+        <test-method is-config="true" signature="beforeEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:11:38Z" name="beforeEachMethod" finished-at="2021-06-22T01:11:41Z" duration-ms="2254" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing chrome browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeEachMethod -->
+        <test-method signature="addDependentsTest()[pri:15, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:11:41Z" name="addDependentsTest" finished-at="2021-06-22T01:11:52Z" duration-ms="11548" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing Chrome Browser]]>
+            </line>
+            <line>
+              <![CDATA[Application started]]>
+            </line>
+            <line>
+              <![CDATA[Logged in Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Start editing My information on 'MyInfo Page']]>
+            </line>
+            <line>
+              <![CDATA[Start adding 'Emergency Contacts']]>
+            </line>
+            <line>
+              <![CDATA[A dependent is added successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addDependentsTest -->
+        <test-method is-config="true" signature="afterEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:11:52Z" name="afterEachMethod" finished-at="2021-06-22T01:11:52Z" duration-ms="242" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser session end]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterEachMethod -->
+        <test-method is-config="true" signature="beforeEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:11:52Z" name="beforeEachMethod" finished-at="2021-06-22T01:11:54Z" duration-ms="2007" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing chrome browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeEachMethod -->
+        <test-method signature="addImmigrantRecordsTest()[pri:16, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:11:54Z" name="addImmigrantRecordsTest" finished-at="2021-06-22T01:12:14Z" duration-ms="19781" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing Chrome Browser]]>
+            </line>
+            <line>
+              <![CDATA[Application started]]>
+            </line>
+            <line>
+              <![CDATA[Logged in Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Start editing My information on 'MyInfo Page']]>
+            </line>
+            <line>
+              <![CDATA[Start adding 'Immigrant Records']]>
+            </line>
+            <line>
+              <![CDATA[one immigration record added to the page ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addImmigrantRecordsTest -->
+        <test-method is-config="true" signature="afterEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:12:14Z" name="afterEachMethod" finished-at="2021-06-22T01:12:14Z" duration-ms="178" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser session end]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterEachMethod -->
+        <test-method is-config="true" signature="beforeEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:12:14Z" name="beforeEachMethod" finished-at="2021-06-22T01:12:16Z" duration-ms="2144" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing chrome browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeEachMethod -->
+        <test-method signature="deleteImmigrationRecordTest()[pri:17, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:12:16Z" name="deleteImmigrationRecordTest" finished-at="2021-06-22T01:12:25Z" duration-ms="8739" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing Chrome Browser]]>
+            </line>
+            <line>
+              <![CDATA[Application started]]>
+            </line>
+            <line>
+              <![CDATA[Logged in Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Start editing my information on 'MyInfo Page']]>
+            </line>
+            <line>
+              <![CDATA[Start deleting 'Immigrant Records']]>
+            </line>
+            <line>
+              <![CDATA[Immigration record got deleted]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deleteImmigrationRecordTest -->
+        <test-method is-config="true" signature="afterEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:12:25Z" name="afterEachMethod" finished-at="2021-06-22T01:12:25Z" duration-ms="177" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser session end]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterEachMethod -->
+        <test-method is-config="true" signature="beforeEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:12:25Z" name="beforeEachMethod" finished-at="2021-06-22T01:12:28Z" duration-ms="2260" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing chrome browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeEachMethod -->
+        <test-method signature="validateAdminPageTest()[pri:18, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:12:28Z" name="validateAdminPageTest" finished-at="2021-06-22T01:12:59Z" duration-ms="31254" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing Chrome Browser]]>
+            </line>
+            <line>
+              <![CDATA[Application started]]>
+            </line>
+            <line>
+              <![CDATA[Logged in Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Start validating user management list on the Admin page]]>
+            </line>
+            <line>
+              <![CDATA[All the links on the admin page are validated]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validateAdminPageTest -->
+        <test-method is-config="true" signature="afterEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:12:59Z" name="afterEachMethod" finished-at="2021-06-22T01:12:59Z" duration-ms="320" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser session end]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterEachMethod -->
+        <test-method is-config="true" signature="beforeEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:12:59Z" name="beforeEachMethod" finished-at="2021-06-22T01:13:02Z" duration-ms="2391" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing chrome browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeEachMethod -->
+        <test-method signature="addSystemUserTest()[pri:19, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:13:02Z" name="addSystemUserTest" finished-at="2021-06-22T01:13:14Z" duration-ms="12318" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing Chrome Browser]]>
+            </line>
+            <line>
+              <![CDATA[Application started]]>
+            </line>
+            <line>
+              <![CDATA[Logged in Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Navigate to admin page]]>
+            </line>
+            <line>
+              <![CDATA[System user added successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addSystemUserTest -->
+        <test-method is-config="true" signature="afterEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:13:14Z" name="afterEachMethod" finished-at="2021-06-22T01:13:14Z" duration-ms="171" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser session end]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterEachMethod -->
+        <test-method is-config="true" signature="beforeEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:13:14Z" name="beforeEachMethod" finished-at="2021-06-22T01:13:16Z" duration-ms="2057" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing chrome browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeEachMethod -->
+        <test-method signature="searchSystemUserTest()[pri:20, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:13:16Z" name="searchSystemUserTest" finished-at="2021-06-22T01:13:27Z" duration-ms="10849" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing Chrome Browser]]>
+            </line>
+            <line>
+              <![CDATA[Application started]]>
+            </line>
+            <line>
+              <![CDATA[Logged in Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Start navigating to admin page]]>
+            </line>
+            <line>
+              <![CDATA[Start searching system user]]>
+            </line>
+            <line>
+              <![CDATA[One record is displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- searchSystemUserTest -->
+        <test-method is-config="true" signature="afterEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:13:27Z" name="afterEachMethod" finished-at="2021-06-22T01:13:27Z" duration-ms="200" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser session end]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterEachMethod -->
+        <test-method is-config="true" signature="beforeEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:13:27Z" name="beforeEachMethod" finished-at="2021-06-22T01:13:30Z" duration-ms="2552" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing chrome browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeEachMethod -->
+        <test-method signature="searchInvalidUserTest()[pri:21, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:13:30Z" name="searchInvalidUserTest" finished-at="2021-06-22T01:13:38Z" duration-ms="8682" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing Chrome Browser]]>
+            </line>
+            <line>
+              <![CDATA[Application started]]>
+            </line>
+            <line>
+              <![CDATA[Logged in Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Searching an invalid system user on the admin page]]>
+            </line>
+            <line>
+              <![CDATA['No record found' message is displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- searchInvalidUserTest -->
+        <test-method is-config="true" signature="afterEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:13:38Z" name="afterEachMethod" finished-at="2021-06-22T01:13:39Z" duration-ms="224" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser session end]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterEachMethod -->
+        <test-method is-config="true" signature="beforeEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:13:39Z" name="beforeEachMethod" finished-at="2021-06-22T01:13:41Z" duration-ms="2504" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing chrome browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeEachMethod -->
+        <test-method signature="addJobTitleTest()[pri:22, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:13:41Z" name="addJobTitleTest" finished-at="2021-06-22T01:13:52Z" duration-ms="10949" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing Chrome Browser]]>
+            </line>
+            <line>
+              <![CDATA[Application started]]>
+            </line>
+            <line>
+              <![CDATA[Logged in Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Start adding job title to the admin page]]>
+            </line>
+            <line>
+              <![CDATA[One job title Added to the page]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addJobTitleTest -->
+        <test-method is-config="true" signature="afterEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:13:52Z" name="afterEachMethod" finished-at="2021-06-22T01:13:52Z" duration-ms="176" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser session end]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterEachMethod -->
+        <test-method is-config="true" signature="beforeEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:13:52Z" name="beforeEachMethod" finished-at="2021-06-22T01:13:55Z" duration-ms="2302" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing chrome browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeEachMethod -->
+        <test-method signature="deleteJobTitleTest()[pri:23, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:13:55Z" name="deleteJobTitleTest" finished-at="2021-06-22T01:14:07Z" duration-ms="12600" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing Chrome Browser]]>
+            </line>
+            <line>
+              <![CDATA[Application started]]>
+            </line>
+            <line>
+              <![CDATA[Logged in Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Start deleting a job title on the admin page]]>
+            </line>
+            <line>
+              <![CDATA[One job title got deleted]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deleteJobTitleTest -->
+        <test-method is-config="true" signature="afterEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:14:07Z" name="afterEachMethod" finished-at="2021-06-22T01:14:07Z" duration-ms="188" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser session end]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterEachMethod -->
+        <test-method is-config="true" signature="beforeEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:14:07Z" name="beforeEachMethod" finished-at="2021-06-22T01:14:10Z" duration-ms="2153" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing chrome browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeEachMethod -->
+        <test-method signature="validatePIMPageTest()[pri:24, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:14:10Z" name="validatePIMPageTest" finished-at="2021-06-22T01:14:25Z" duration-ms="15833" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing Chrome Browser]]>
+            </line>
+            <line>
+              <![CDATA[Application started]]>
+            </line>
+            <line>
+              <![CDATA[Logged in Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Start validating all the links on 'PIM Page']]>
+            </line>
+            <line>
+              <![CDATA[All the links on the pim page are displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validatePIMPageTest -->
+        <test-method is-config="true" signature="afterEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:14:25Z" name="afterEachMethod" finished-at="2021-06-22T01:14:26Z" duration-ms="207" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser session end]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterEachMethod -->
+        <test-method is-config="true" signature="beforeEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:14:26Z" name="beforeEachMethod" finished-at="2021-06-22T01:14:28Z" duration-ms="2170" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing chrome browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeEachMethod -->
+        <test-method signature="addEmployeeTest()[pri:25, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:14:28Z" name="addEmployeeTest" finished-at="2021-06-22T01:14:39Z" duration-ms="11159" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing Chrome Browser]]>
+            </line>
+            <line>
+              <![CDATA[Application started]]>
+            </line>
+            <line>
+              <![CDATA[Logged in Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Start adding an employee on 'PIM Page']]>
+            </line>
+            <line>
+              <![CDATA[Employee added successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addEmployeeTest -->
+        <test-method is-config="true" signature="afterEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:14:39Z" name="afterEachMethod" finished-at="2021-06-22T01:14:39Z" duration-ms="183" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser session end]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterEachMethod -->
+        <test-method is-config="true" signature="beforeEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:14:39Z" name="beforeEachMethod" finished-at="2021-06-22T01:14:41Z" duration-ms="2296" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing chrome browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeEachMethod -->
+        <test-method signature="searchEmployeeTest()[pri:26, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:14:41Z" name="searchEmployeeTest" finished-at="2021-06-22T01:14:50Z" duration-ms="8459" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing Chrome Browser]]>
+            </line>
+            <line>
+              <![CDATA[Application started]]>
+            </line>
+            <line>
+              <![CDATA[Logged in Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Start searching an employee on 'PIM Page']]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- searchEmployeeTest -->
+        <test-method is-config="true" signature="afterEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:14:50Z" name="afterEachMethod" finished-at="2021-06-22T01:14:50Z" duration-ms="172" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser session end]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterEachMethod -->
+        <test-method is-config="true" signature="beforeEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:14:50Z" name="beforeEachMethod" finished-at="2021-06-22T01:14:52Z" duration-ms="2246" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing chrome browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeEachMethod -->
+        <test-method signature="validateLeavePageTest()[pri:27, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:14:52Z" name="validateLeavePageTest" finished-at="2021-06-22T01:15:17Z" duration-ms="24670" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing Chrome Browser]]>
+            </line>
+            <line>
+              <![CDATA[Application started]]>
+            </line>
+            <line>
+              <![CDATA[Logged in Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Navigating to the Leave page]]>
+            </line>
+            <line>
+              <![CDATA[All the links are displayed on the leave page]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validateLeavePageTest -->
+        <test-method is-config="true" signature="afterEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:15:17Z" name="afterEachMethod" finished-at="2021-06-22T01:15:17Z" duration-ms="192" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser session end]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterEachMethod -->
+        <test-method is-config="true" signature="beforeEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:15:17Z" name="beforeEachMethod" finished-at="2021-06-22T01:15:19Z" duration-ms="2292" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing chrome browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeEachMethod -->
+        <test-method signature="assignListTest()[pri:28, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:15:19Z" name="assignListTest" finished-at="2021-06-22T01:15:36Z" duration-ms="16267" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing Chrome Browser]]>
+            </line>
+            <line>
+              <![CDATA[Application started]]>
+            </line>
+            <line>
+              <![CDATA[Logged in Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Navigating to the Leave page]]>
+            </line>
+            <line>
+              <![CDATA[Start assigning a leave list]]>
+            </line>
+            <line>
+              <![CDATA[One leave list assigned to the page]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- assignListTest -->
+        <test-method is-config="true" signature="afterEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:15:36Z" name="afterEachMethod" finished-at="2021-06-22T01:15:36Z" duration-ms="183" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser session end]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterEachMethod -->
+        <test-method is-config="true" signature="beforeEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:15:36Z" name="beforeEachMethod" finished-at="2021-06-22T01:15:38Z" duration-ms="2309" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing chrome browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeEachMethod -->
+        <test-method signature="searchLeaveListTest()[pri:29, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:15:38Z" name="searchLeaveListTest" finished-at="2021-06-22T01:15:51Z" duration-ms="13315" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing Chrome Browser]]>
+            </line>
+            <line>
+              <![CDATA[Application started]]>
+            </line>
+            <line>
+              <![CDATA[Logged in Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Start navigating to the Leave page]]>
+            </line>
+            <line>
+              <![CDATA[Start searching leave list]]>
+            </line>
+            <line>
+              <![CDATA[searching result is displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- searchLeaveListTest -->
+        <test-method is-config="true" signature="afterEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:15:51Z" name="afterEachMethod" finished-at="2021-06-22T01:15:52Z" duration-ms="184" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser session end]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterEachMethod -->
+        <test-method is-config="true" signature="beforeEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:15:52Z" name="beforeEachMethod" finished-at="2021-06-22T01:15:54Z" duration-ms="2210" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing chrome browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeEachMethod -->
+        <test-method signature="validateTimePageTest()[pri:30, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:15:54Z" name="validateTimePageTest" finished-at="2021-06-22T01:16:16Z" duration-ms="22247" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing Chrome Browser]]>
+            </line>
+            <line>
+              <![CDATA[Application started]]>
+            </line>
+            <line>
+              <![CDATA[Logged in Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Navigate to the time page]]>
+            </line>
+            <line>
+              <![CDATA[All the links on the time page are displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validateTimePageTest -->
+        <test-method is-config="true" signature="afterEachMethod()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:16:16Z" name="afterEachMethod" finished-at="2021-06-22T01:16:16Z" duration-ms="202" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser session end]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterEachMethod -->
+        <test-method is-config="true" signature="afterEachClass()[pri:0, instance:org.example.testflows.OrangeHRMTestFlow@fcd6521]" started-at="2021-06-22T01:16:16Z" name="afterEachClass" finished-at="2021-06-22T01:16:16Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachClass -->
+      </class> <!-- org.example.testflows.OrangeHRMTestFlow -->
+    </test> <!-- /Users/nur428/IdeaProjects/javaproject -->
+  </suite> <!-- All Test Suite -->
+</testng-results>

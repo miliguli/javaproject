@@ -16,7 +16,7 @@ public class CommonVariables {
     public static String orangeHRM_System_Username="Milyyy";
     public static String orangeHRM_System_InvalidUsername="Alex.X";
     public static String orangeHRM_System_Password="Mily1234";
-    public static String orangeHRM_MyInfoFilePath ="/Users/nur428/IdeaProjects/javaproject/src/main/java/org/example/data/test100k.db";
+    public static String orangeHRM_MyInfoFilePath ="//source_file//test100k.db";
     public static String orangeHRM_MyInfoFileName ="test100k.db";
     public static String orangeHRM_MyInfo_AttachmentComment ="one attachment added successfully.";
     public static String orangeHRM_MyInfo_MaritalStatus="Single";

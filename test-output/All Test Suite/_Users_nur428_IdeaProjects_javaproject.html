@@ -1,0 +1,577 @@
+<html>
+<head>
+<title>TestNG:  /Users/nur428/IdeaProjects/javaproject</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>/Users/nur428/IdeaProjects/javaproject</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>31/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jun 21 21:08:53 EDT 2021</td>
+</tr>
+<tr><td>Total time:</td><td>443 seconds (443553 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.example.testflows.OrangeHRMTestFlow.addDependentsTest()'><b>addDependentsTest</b><br>Test class: org.example.testflows.OrangeHRMTestFlow<br/>
+<a href="#Output-1327842480" onClick='toggleBox("Output-1327842480", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1327842480" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1327842480">
+Initializing Chrome Browser<br/>
+Application started<br/>
+Logged in Successfully<br/>
+Start editing My information on 'MyInfo Page'<br/>
+Start adding 'Emergency Contacts'<br/>
+A dependent is added successfully<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>org.example.testflows.OrangeHRMTestFlow@fcd6521</td></tr>
+<tr>
+<td title='org.example.testflows.OrangeHRMTestFlow.addEmergencyContactsTest()'><b>addEmergencyContactsTest</b><br>Test class: org.example.testflows.OrangeHRMTestFlow<br/>
+<a href="#Output-1287967828" onClick='toggleBox("Output-1287967828", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1287967828" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1287967828">
+Initializing Chrome Browser<br/>
+Application started<br/>
+Logged in Successfully<br/>
+Start editing My information on 'MyInfo Page'<br/>
+Start editing 'Emergency Contacts'<br/>
+ 'Adding Emergency Contact' test passed<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>org.example.testflows.OrangeHRMTestFlow@fcd6521</td></tr>
+<tr>
+<td title='org.example.testflows.OrangeHRMTestFlow.addEmployeeTest()'><b>addEmployeeTest</b><br>Test class: org.example.testflows.OrangeHRMTestFlow<br/>
+<a href="#Output-1145657508" onClick='toggleBox("Output-1145657508", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1145657508" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1145657508">
+Initializing Chrome Browser<br/>
+Application started<br/>
+Logged in Successfully<br/>
+Start adding an employee on 'PIM Page'<br/>
+Employee added successfully<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>org.example.testflows.OrangeHRMTestFlow@fcd6521</td></tr>
+<tr>
+<td title='org.example.testflows.OrangeHRMTestFlow.addImmigrantRecordsTest()'><b>addImmigrantRecordsTest</b><br>Test class: org.example.testflows.OrangeHRMTestFlow<br/>
+<a href="#Output-702218380" onClick='toggleBox("Output-702218380", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-702218380" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-702218380">
+Initializing Chrome Browser<br/>
+Application started<br/>
+Logged in Successfully<br/>
+Start editing My information on 'MyInfo Page'<br/>
+Start adding 'Immigrant Records'<br/>
+one immigration record added to the page <br/>
+</div>
+</td>
+<td></td>
+<td>19</td>
+<td>org.example.testflows.OrangeHRMTestFlow@fcd6521</td></tr>
+<tr>
+<td title='org.example.testflows.OrangeHRMTestFlow.addJobTitleTest()'><b>addJobTitleTest</b><br>Test class: org.example.testflows.OrangeHRMTestFlow<br/>
+<a href="#Output-1829553277" onClick='toggleBox("Output-1829553277", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1829553277" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1829553277">
+Initializing Chrome Browser<br/>
+Application started<br/>
+Logged in Successfully<br/>
+Start adding job title to the admin page<br/>
+One job title Added to the page<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>org.example.testflows.OrangeHRMTestFlow@fcd6521</td></tr>
+<tr>
+<td title='org.example.testflows.OrangeHRMTestFlow.addSystemUserTest()'><b>addSystemUserTest</b><br>Test class: org.example.testflows.OrangeHRMTestFlow<br/>
+<a href="#Output-518072030" onClick='toggleBox("Output-518072030", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-518072030" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-518072030">
+Initializing Chrome Browser<br/>
+Application started<br/>
+Logged in Successfully<br/>
+Navigate to admin page<br/>
+System user added successfully<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>org.example.testflows.OrangeHRMTestFlow@fcd6521</td></tr>
+<tr>
+<td title='org.example.testflows.OrangeHRMTestFlow.assignListTest()'><b>assignListTest</b><br>Test class: org.example.testflows.OrangeHRMTestFlow<br/>
+<a href="#Output-2103485999" onClick='toggleBox("Output-2103485999", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2103485999" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2103485999">
+Initializing Chrome Browser<br/>
+Application started<br/>
+Logged in Successfully<br/>
+Navigating to the Leave page<br/>
+Start assigning a leave list<br/>
+One leave list assigned to the page<br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>org.example.testflows.OrangeHRMTestFlow@fcd6521</td></tr>
+<tr>
+<td title='org.example.testflows.OrangeHRMTestFlow.deleteImmigrationRecordTest()'><b>deleteImmigrationRecordTest</b><br>Test class: org.example.testflows.OrangeHRMTestFlow<br/>
+<a href="#Output-1295618213" onClick='toggleBox("Output-1295618213", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1295618213" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1295618213">
+Initializing Chrome Browser<br/>
+Application started<br/>
+Logged in Successfully<br/>
+Start editing my information on 'MyInfo Page'<br/>
+Start deleting 'Immigrant Records'<br/>
+Immigration record got deleted<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>org.example.testflows.OrangeHRMTestFlow@fcd6521</td></tr>
+<tr>
+<td title='org.example.testflows.OrangeHRMTestFlow.deleteJobTitleTest()'><b>deleteJobTitleTest</b><br>Test class: org.example.testflows.OrangeHRMTestFlow<br/>
+<a href="#Output-903105747" onClick='toggleBox("Output-903105747", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-903105747" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-903105747">
+Initializing Chrome Browser<br/>
+Application started<br/>
+Logged in Successfully<br/>
+Start deleting a job title on the admin page<br/>
+One job title got deleted<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>org.example.testflows.OrangeHRMTestFlow@fcd6521</td></tr>
+<tr>
+<td title='org.example.testflows.OrangeHRMTestFlow.editContactDetailsTest()'><b>editContactDetailsTest</b><br>Test class: org.example.testflows.OrangeHRMTestFlow<br/>
+<a href="#Output-1477996447" onClick='toggleBox("Output-1477996447", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1477996447" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1477996447">
+Initializing Chrome Browser<br/>
+Application started<br/>
+Logged in Successfully<br/>
+Start editing My information on 'MyInfo Page'<br/>
+Start editing 'Contact Details'<br/>
+Contact details are updated<br/>
+</div>
+</td>
+<td></td>
+<td>17</td>
+<td>org.example.testflows.OrangeHRMTestFlow@fcd6521</td></tr>
+<tr>
+<td title='org.example.testflows.OrangeHRMTestFlow.editCustomFieldTest()'><b>editCustomFieldTest</b><br>Test class: org.example.testflows.OrangeHRMTestFlow<br/>
+<a href="#Output-438793128" onClick='toggleBox("Output-438793128", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-438793128" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-438793128">
+Initializing Chrome Browser<br/>
+Application started<br/>
+Logged in Successfully<br/>
+Start editing 'Custom Fields' on MyInfo Page<br/>
+Adding file to the personal information page<br/>
+'Custom Fields' on MyInfo Page is updated<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>org.example.testflows.OrangeHRMTestFlow@fcd6521</td></tr>
+<tr>
+<td title='org.example.testflows.OrangeHRMTestFlow.editMyPersonalInfoTest()'><b>editMyPersonalInfoTest</b><br>Test class: org.example.testflows.OrangeHRMTestFlow<br/>
+<a href="#Output-1144673247" onClick='toggleBox("Output-1144673247", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1144673247" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1144673247">
+Initializing Chrome Browser<br/>
+Application started<br/>
+Logged in Successfully<br/>
+Start editing personal information on 'MyInfo Page'<br/>
+Selecting marital status<br/>
+Selecting nationality from dropdown list<br/>
+'Personal details' got updated<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>org.example.testflows.OrangeHRMTestFlow@fcd6521</td></tr>
+<tr>
+<td title='org.example.testflows.OrangeHRMTestFlow.emptyPasswordTest()'><b>emptyPasswordTest</b><br>Test class: org.example.testflows.OrangeHRMTestFlow<br/>
+<a href="#Output-570294012" onClick='toggleBox("Output-570294012", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-570294012" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-570294012">
+Initializing Chrome Browser<br/>
+Application started<br/>
+Logging with empty password<br/>
+cannot login with invalid password<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>org.example.testflows.OrangeHRMTestFlow@fcd6521</td></tr>
+<tr>
+<td title='org.example.testflows.OrangeHRMTestFlow.emptyUsernameTest()'><b>emptyUsernameTest</b><br>Test class: org.example.testflows.OrangeHRMTestFlow<br/>
+<a href="#Output-142103421" onClick='toggleBox("Output-142103421", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-142103421" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-142103421">
+Initializing Chrome Browser<br/>
+Application started<br/>
+Logging with empty username<br/>
+cannot login with empty username <br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>org.example.testflows.OrangeHRMTestFlow@fcd6521</td></tr>
+<tr>
+<td title='org.example.testflows.OrangeHRMTestFlow.invalidPasswordTest()'><b>invalidPasswordTest</b><br>Test class: org.example.testflows.OrangeHRMTestFlow<br/>
+<a href="#Output-1353759820" onClick='toggleBox("Output-1353759820", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1353759820" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1353759820">
+Initializing Chrome Browser<br/>
+Application started<br/>
+Logging using valid username with invalid password <br/>
+cannot login with invalid password<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>org.example.testflows.OrangeHRMTestFlow@fcd6521</td></tr>
+<tr>
+<td title='org.example.testflows.OrangeHRMTestFlow.invalidUsernameTest()'><b>invalidUsernameTest</b><br>Test class: org.example.testflows.OrangeHRMTestFlow<br/>
+<a href="#Output-1710228600" onClick='toggleBox("Output-1710228600", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1710228600" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1710228600">
+Initializing Chrome Browser<br/>
+Application started<br/>
+Logging using invalid Username with valid password<br/>
+cannot login with invalid username <br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>org.example.testflows.OrangeHRMTestFlow@fcd6521</td></tr>
+<tr>
+<td title='org.example.testflows.OrangeHRMTestFlow.loginTest()'><b>loginTest</b><br>Test class: org.example.testflows.OrangeHRMTestFlow<br/>
+<a href="#Output-2043106095" onClick='toggleBox("Output-2043106095", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2043106095" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2043106095">
+Initializing Chrome Browser<br/>
+Application started<br/>
+Logged in Successfully<br/>
+Start logging out from the Application<br/>
+Logged out successfully<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>org.example.testflows.OrangeHRMTestFlow@fcd6521</td></tr>
+<tr>
+<td title='org.example.testflows.OrangeHRMTestFlow.passwordResettingErrorTest()'><b>passwordResettingErrorTest</b><br>Test class: org.example.testflows.OrangeHRMTestFlow<br/>
+<a href="#Output-859193874" onClick='toggleBox("Output-859193874", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-859193874" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-859193874">
+Initializing Chrome Browser<br/>
+Application started<br/>
+Requesting new password <br/>
+cannot find user message is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>org.example.testflows.OrangeHRMTestFlow@fcd6521</td></tr>
+<tr>
+<td title='org.example.testflows.OrangeHRMTestFlow.passwordResettingErrorWithSpecialCharacterTest()'><b>passwordResettingErrorWithSpecialCharacterTest</b><br>Test class: org.example.testflows.OrangeHRMTestFlow<br/>
+<a href="#Output-862486751" onClick='toggleBox("Output-862486751", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-862486751" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-862486751">
+Initializing Chrome Browser<br/>
+Application started<br/>
+Requesting password using special Character<br/>
+cannot reset password with special characters<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>org.example.testflows.OrangeHRMTestFlow@fcd6521</td></tr>
+<tr>
+<td title='org.example.testflows.OrangeHRMTestFlow.resetPasswordTest()'><b>resetPasswordTest</b><br>Test class: org.example.testflows.OrangeHRMTestFlow<br/>
+<a href="#Output-938199512" onClick='toggleBox("Output-938199512", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-938199512" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-938199512">
+Initializing Chrome Browser<br/>
+Application started<br/>
+Resetting password<br/>
+'resetting password request sent' confirmation message is displayed <br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>org.example.testflows.OrangeHRMTestFlow@fcd6521</td></tr>
+<tr>
+<td title='org.example.testflows.OrangeHRMTestFlow.searchEmployeeTest()'><b>searchEmployeeTest</b><br>Test class: org.example.testflows.OrangeHRMTestFlow<br/>
+<a href="#Output-223221740" onClick='toggleBox("Output-223221740", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-223221740" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-223221740">
+Initializing Chrome Browser<br/>
+Application started<br/>
+Logged in Successfully<br/>
+Start searching an employee on 'PIM Page'<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>org.example.testflows.OrangeHRMTestFlow@fcd6521</td></tr>
+<tr>
+<td title='org.example.testflows.OrangeHRMTestFlow.searchInvalidUserTest()'><b>searchInvalidUserTest</b><br>Test class: org.example.testflows.OrangeHRMTestFlow<br/>
+<a href="#Output-1882274571" onClick='toggleBox("Output-1882274571", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1882274571" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1882274571">
+Initializing Chrome Browser<br/>
+Application started<br/>
+Logged in Successfully<br/>
+Searching an invalid system user on the admin page<br/>
+'No record found' message is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>org.example.testflows.OrangeHRMTestFlow@fcd6521</td></tr>
+<tr>
+<td title='org.example.testflows.OrangeHRMTestFlow.searchLeaveListTest()'><b>searchLeaveListTest</b><br>Test class: org.example.testflows.OrangeHRMTestFlow<br/>
+<a href="#Output-1623572757" onClick='toggleBox("Output-1623572757", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1623572757" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1623572757">
+Initializing Chrome Browser<br/>
+Application started<br/>
+Logged in Successfully<br/>
+Start navigating to the Leave page<br/>
+Start searching leave list<br/>
+searching result is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>org.example.testflows.OrangeHRMTestFlow@fcd6521</td></tr>
+<tr>
+<td title='org.example.testflows.OrangeHRMTestFlow.searchSystemUserTest()'><b>searchSystemUserTest</b><br>Test class: org.example.testflows.OrangeHRMTestFlow<br/>
+<a href="#Output-443006127" onClick='toggleBox("Output-443006127", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-443006127" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-443006127">
+Initializing Chrome Browser<br/>
+Application started<br/>
+Logged in Successfully<br/>
+Start navigating to admin page<br/>
+Start searching system user<br/>
+One record is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>org.example.testflows.OrangeHRMTestFlow@fcd6521</td></tr>
+<tr>
+<td title='org.example.testflows.OrangeHRMTestFlow.validateAdminPageTest()'><b>validateAdminPageTest</b><br>Test class: org.example.testflows.OrangeHRMTestFlow<br/>
+<a href="#Output-1787667909" onClick='toggleBox("Output-1787667909", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1787667909" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1787667909">
+Initializing Chrome Browser<br/>
+Application started<br/>
+Logged in Successfully<br/>
+Start validating user management list on the Admin page<br/>
+All the links on the admin page are validated<br/>
+</div>
+</td>
+<td></td>
+<td>31</td>
+<td>org.example.testflows.OrangeHRMTestFlow@fcd6521</td></tr>
+<tr>
+<td title='org.example.testflows.OrangeHRMTestFlow.validateDashboardPageLinksTest()'><b>validateDashboardPageLinksTest</b><br>Test class: org.example.testflows.OrangeHRMTestFlow<br/>
+<a href="#Output-281487983" onClick='toggleBox("Output-281487983", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-281487983" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-281487983">
+Initializing Chrome Browser<br/>
+Application started<br/>
+Logged in Successfully<br/>
+Start validating all the links display on the 'Dashboard Page'<br/>
+All links are displayed on the 'Dashboard Page'<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>org.example.testflows.OrangeHRMTestFlow@fcd6521</td></tr>
+<tr>
+<td title='org.example.testflows.OrangeHRMTestFlow.validateLeavePageTest()'><b>validateLeavePageTest</b><br>Test class: org.example.testflows.OrangeHRMTestFlow<br/>
+<a href="#Output-1750978232" onClick='toggleBox("Output-1750978232", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1750978232" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1750978232">
+Initializing Chrome Browser<br/>
+Application started<br/>
+Logged in Successfully<br/>
+Navigating to the Leave page<br/>
+All the links are displayed on the leave page<br/>
+</div>
+</td>
+<td></td>
+<td>24</td>
+<td>org.example.testflows.OrangeHRMTestFlow@fcd6521</td></tr>
+<tr>
+<td title='org.example.testflows.OrangeHRMTestFlow.validateLoginPageTextTest()'><b>validateLoginPageTextTest</b><br>Test class: org.example.testflows.OrangeHRMTestFlow<br/>
+<a href="#Output-987015126" onClick='toggleBox("Output-987015126", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-987015126" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-987015126">
+Initializing Chrome Browser<br/>
+Application started<br/>
+Validating all the Texts and links display on the login page<br/>
+All the links and text are validated<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>org.example.testflows.OrangeHRMTestFlow@fcd6521</td></tr>
+<tr>
+<td title='org.example.testflows.OrangeHRMTestFlow.validateMyInfoPageTest()'><b>validateMyInfoPageTest</b><br>Test class: org.example.testflows.OrangeHRMTestFlow<br/>
+<a href="#Output-1142931081" onClick='toggleBox("Output-1142931081", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1142931081" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1142931081">
+Initializing Chrome Browser<br/>
+Application started<br/>
+Logged in Successfully<br/>
+Start validating all the links on 'My Info Page'<br/>
+All the links are displayed on the MyInfo page<br/>
+</div>
+</td>
+<td></td>
+<td>17</td>
+<td>org.example.testflows.OrangeHRMTestFlow@fcd6521</td></tr>
+<tr>
+<td title='org.example.testflows.OrangeHRMTestFlow.validatePIMPageTest()'><b>validatePIMPageTest</b><br>Test class: org.example.testflows.OrangeHRMTestFlow<br/>
+<a href="#Output-2020486238" onClick='toggleBox("Output-2020486238", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2020486238" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2020486238">
+Initializing Chrome Browser<br/>
+Application started<br/>
+Logged in Successfully<br/>
+Start validating all the links on 'PIM Page'<br/>
+All the links on the pim page are displayed<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>org.example.testflows.OrangeHRMTestFlow@fcd6521</td></tr>
+<tr>
+<td title='org.example.testflows.OrangeHRMTestFlow.validateTimePageTest()'><b>validateTimePageTest</b><br>Test class: org.example.testflows.OrangeHRMTestFlow<br/>
+<a href="#Output-1944290078" onClick='toggleBox("Output-1944290078", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1944290078" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1944290078">
+Initializing Chrome Browser<br/>
+Application started<br/>
+Logged in Successfully<br/>
+Navigate to the time page<br/>
+All the links on the time page are displayed<br/>
+</div>
+</td>
+<td></td>
+<td>22</td>
+<td>org.example.testflows.OrangeHRMTestFlow@fcd6521</td></tr>
+</table><p>
+</body>
+</html>

@@ -181,6 +181,9 @@ public class OrangeHRM_ObjRepo {
     @FindBy(id = "btnEditCustom")
     public WebElement saveButtonForEditCustom;
 
+    @FindBy(xpath = "//*[@id=\'ufile\']")
+    public WebElement uploadFile;
+
     @FindBy(name = "custom1")
     public WebElement bloodTypeDropdownList;
 
