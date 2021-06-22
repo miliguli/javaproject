@@ -4,39 +4,6 @@
     <test verbose="2" preserve-order="true" name="/Users/nur428/IdeaProjects/javaproject">
         <classes>
             <class name="org.example.testflows.OrangeHRMTestFlow">
-                <methods>
-                    <include name="loginTest"/>
-                    <include name="resetPasswordTest"/>
-                    <include name="invalidPasswordTest"/>
-                    <include name="invalidUsernameTest"/>
-                    <include name="emptyUsernameTest"/>
-                    <include name="emptyPasswordTest"/>
-                    <include name="passwordResettingErrorTest"/>
-                    <include name="passwordResettingErrorWithSpecialCharacterTest"/>
-                    <include name="validateLoginPageTextTest"/>
-                    <include name="validateDashboardPageLinksTest"/>
-                    <include name="validateMyInfoPageTest"/>
-                    <include name="editMyPersonalInfoTest"/>
-                    <include name="editCustomFieldTest"/>
-                    <include name="editContactDetailsTest"/>
-                    <include name="addEmergencyContactsTest"/>
-                    <include name="addDependentsTest"/>
-                    <include name="addImmigrantRecordsTest"/>
-                    <include name="deleteImmigrationRecordTest"/>
-                    <include name="validateAdminPageTest"/>
-                    <include name="addSystemUserTest"/>
-                    <include name="searchSystemUserTest"/>
-                    <include name="searchInvalidUserTest"/>
-                    <include name="addJobTitleTest"/>
-                    <include name="deleteJobTitleTest"/>
-                    <include name="validatePIMPageTest"/>
-                    <include name="addEmployeeTest"/>
-                    <include name="searchEmployeeTest"/>
-                    <include name="validateLeavePageTest"/>
-                    <include name="assignListTest"/>
-                    <include name="searchLeaveListTest"/>
-                    <include name="validateTimePageTest"/>
-                </methods>
             </class>
         </classes>
     </test>
